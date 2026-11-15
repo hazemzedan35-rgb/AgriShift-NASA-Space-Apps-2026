@@ -1,0 +1,3 @@
+
+[tool.vercel]
+entrypoint = "agrishift_decision.api:app"
