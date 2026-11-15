@@ -1,0 +1,24 @@
+/* Compatibility shim: older MVP tests/links expect this stylesheet path.
+   New pages load agrishift.css + cinema-overrides.css directly. */
+@import url('./agrishift.css');
+@import url('./cinema-overrides.css');
+
+/* Farm location and scientific options: added by the integrated build. */
+.agri-location-grid{display:grid;grid-template-columns:1fr 1fr auto;gap:12px;align-items:end}
+.agri-location-grid label{display:flex;flex-direction:column;gap:6px;font-size:12px;color:inherit}
+.agri-location-grid input{min-width:0;width:100%;border-radius:10px;padding:11px 12px;background:#fff;color:#0c2c37;border:1px solid #a5b9b6}
+.agri-gps-btn{align-self:end;min-height:42px;white-space:nowrap}
+.agri-crop-choices{display:flex;flex-wrap:wrap;gap:10px}
+.agri-crop-choices label{display:inline-flex;align-items:center;gap:8px;background:rgba(68,142,105,.07);padding:10px 12px;border:1px solid rgba(36,89,70,.15);border-radius:12px;font-size:13px}
+.agri-crop-choices input{accent-color:#3f9779;width:16px;height:16px}
+@media(max-width:720px){.agri-location-grid{grid-template-columns:1fr 1fr}.agri-gps-btn{grid-column:1/-1;justify-content:center}}
+@media(max-width:440px){.agri-location-grid{grid-template-columns:1fr}}
+
+.agri-evidence-strip{display:flex;gap:10px;align-items:flex-start;background:rgba(13,98,97,.09);border:1px solid rgba(45,117,101,.2);padding:14px 16px;border-radius:15px;margin:0 0 14px;color:#183f3e;font-size:12px;line-height:1.55}
+.agri-evidence-strip strong{white-space:nowrap;font-size:10px;letter-spacing:.08em;color:#0b5d50}
+.agri-soil-summary{margin:0 0 18px;background:linear-gradient(120deg,#0b2c38,#10443f);color:#f5fbfb;padding:17px;border-radius:17px;border:1px solid rgba(129,230,185,.22)}
+.agri-soil-summary>div{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between;align-items:center}
+.agri-soil-summary strong{font-size:11px;letter-spacing:.07em}
+.agri-soil-summary span{font-size:12px;color:#c7e7db}
+.agri-soil-summary p{font-size:13px;margin:8px 0 0;color:#e5eeea;line-height:1.6}
+@media(max-width:640px){.agri-evidence-strip{flex-direction:column;gap:4px}}

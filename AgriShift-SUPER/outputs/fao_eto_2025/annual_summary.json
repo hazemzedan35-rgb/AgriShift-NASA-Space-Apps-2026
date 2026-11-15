@@ -1,0 +1,31 @@
+{
+  "project": "AgriShift",
+  "stage": "2a",
+  "calculation": "FAO-56 daily grass-reference evapotranspiration ET0",
+  "location": {
+    "latitude": 30.5,
+    "longitude": 31.5
+  },
+  "data_period": {
+    "start": "2025-01-01",
+    "end": "2025-12-31"
+  },
+  "days": 365,
+  "eto_total_mm": 1995.712,
+  "eto_mean_mm_day": 5.468,
+  "eto_min_mm_day": 1.731,
+  "eto_max_mm_day": 10.963,
+  "flags_by_type": {
+    "RS_GT_RSO_CLOUD_FACTOR_CAPPED": 2
+  },
+  "elevation_assumption_m": 0.0,
+  "observed_climate_source": "NASA POWER daily point, source metadata preserved",
+  "limitations": [
+    "ET0 reference grass not crop ETc or irrigation demand",
+    "Using NASA daily mean RH2M to estimate actual vapour pressure via FAO56 Eq.19; less preferred than RHmin/RHmax or dewpoint",
+    "FAO daily Tmean=(Tmax+Tmin)/2 can differ from NASA T2M",
+    "Elevation used in clear-sky radiation is assumed, not observed; supply --elevation-m when known",
+    "NASA gridded climate estimates are not on-farm measurements",
+    "Cloudiness Rs/Rso bounded to [0.3,1.0] for FAO longwave formula; warnings counted"
+  ]
+}

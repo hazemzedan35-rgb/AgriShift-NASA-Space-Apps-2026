@@ -1,0 +1,89 @@
+{
+  "project": "AgriShift",
+  "stage": 1,
+  "source": "NASA POWER Daily Point API",
+  "source_mode": "fixture",
+  "data_status": "SYNTHETIC_FIXTURE_NOT_NASA_OBSERVATIONS",
+  "fetched_or_processed_at_utc": "2026-11-12T22:36:28.842435+00:00",
+  "request": {
+    "latitude": 30.5,
+    "longitude": 31.5,
+    "start": "2025-01-01",
+    "end": "2025-01-03",
+    "time_standard": "LST",
+    "community": "AG",
+    "parameters": [
+      "T2M",
+      "T2M_MAX",
+      "T2M_MIN",
+      "PRECTOTCORR",
+      "RH2M",
+      "WS2M",
+      "ALLSKY_SFC_SW_DWN",
+      "PS"
+    ],
+    "request_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CPS&community=AG&longitude=31.5&latitude=30.5&start=20250101&end=20250103&format=JSON&time-standard=LST"
+  },
+  "nasa_header": {
+    "title": "SYNTHETIC NASA POWER JSON-SHAPE FIXTURE",
+    "api": {
+      "version": "FAKE-FIXTURE",
+      "name": "POWER Daily API (simulated)"
+    },
+    "sources": [
+      "SYNTHETIC"
+    ],
+    "fill_value": -999.0,
+    "start": "20250101",
+    "end": "20250103",
+    "time_standard": "LST"
+  },
+  "nasa_parameters": {
+    "T2M": {
+      "units": "C",
+      "longname": "Temperature at 2 Meters"
+    },
+    "T2M_MAX": {
+      "units": "C",
+      "longname": "Temperature at 2 Meters Maximum"
+    },
+    "T2M_MIN": {
+      "units": "C",
+      "longname": "Temperature at 2 Meters Minimum"
+    },
+    "PRECTOTCORR": {
+      "units": "mm/day",
+      "longname": "Precipitation Corrected"
+    },
+    "RH2M": {
+      "units": "%",
+      "longname": "Relative Humidity at 2 Meters"
+    },
+    "WS2M": {
+      "units": "m/s",
+      "longname": "Wind Speed at 2 Meters"
+    },
+    "ALLSKY_SFC_SW_DWN": {
+      "units": "MJ/m^2/day",
+      "longname": "All Sky Surface Shortwave Downward Irradiance"
+    },
+    "PS": {
+      "units": "kPa",
+      "longname": "Surface Pressure"
+    }
+  },
+  "nasa_geometry": {
+    "type": "Point",
+    "coordinates": [
+      31.5,
+      30.5,
+      12.0
+    ]
+  },
+  "nasa_messages": [],
+  "quality_summary": {
+    "science_ready": false,
+    "all_parameters_fully_available": true
+  },
+  "disclaimer": "Regional gridded climate estimates; not field sensor measurements. No FAO/ET0 calculations performed in Stage 1."
+}

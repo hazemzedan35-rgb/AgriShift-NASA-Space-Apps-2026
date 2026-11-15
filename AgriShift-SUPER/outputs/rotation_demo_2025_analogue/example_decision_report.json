@@ -1,0 +1,217 @@
+{
+  "project": "AgriShift",
+  "status": "RESEARCH_PROTOTYPE",
+  "model": "FAO56_ETc_plus_explainable_rotation_screening",
+  "climate": {
+    "year": 2025,
+    "latitude": 30.5,
+    "longitude": 31.5,
+    "average_air_temperature_c": 23.2,
+    "annual_rain_mm": 39.81,
+    "annual_reference_et0_mm": 1995.712,
+    "daily_mean_reference_et0_mm": 5.468,
+    "source": "NASA POWER daily point API, processed with FAO-56",
+    "time_standard": "LST"
+  },
+  "inputs": {
+    "area_ha": 1.0,
+    "water_budget_m3": 14500.0,
+    "irrigation_efficiency": 0.75,
+    "previous_crop": "wheat",
+    "priority": "balanced",
+    "soil_type": "clay"
+  },
+  "plans": [
+    {
+      "id": "faba-sunflower",
+      "winter_crop": "faba",
+      "summer_crop": "sunflower",
+      "crops": [
+        {
+          "id": "faba",
+          "name": "Faba bean (fresh harvest)",
+          "season": "winter",
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-02-17",
+          "crop_et_mm": 232.19,
+          "gross_planning_proxy_m3": 3095.88
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower (oilseed)",
+          "season": "summer",
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-21",
+          "crop_et_mm": 818.76,
+          "gross_planning_proxy_m3": 10916.8
+        }
+      ],
+      "water_proxy_m3": 14012.68,
+      "budget_difference_m3": 487.32,
+      "within_total_budget": true,
+      "relative_water_score": 100.0,
+      "diversity_heuristic": 100.0,
+      "comparison_score": 100.0,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "Includes a legume; potential rotation-diversity benefit, not measured soil-N gain.",
+        "Historical 2025 climate analogue only; not a weather or yield forecast."
+      ],
+      "rank": 1
+    },
+    {
+      "id": "faba-maize",
+      "winter_crop": "faba",
+      "summer_crop": "maize",
+      "crops": [
+        {
+          "id": "faba",
+          "name": "Faba bean (fresh harvest)",
+          "season": "winter",
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-02-17",
+          "crop_et_mm": 232.19,
+          "gross_planning_proxy_m3": 3095.88
+        },
+        {
+          "id": "maize",
+          "name": "Field maize (grain)",
+          "season": "summer",
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-16",
+          "crop_et_mm": 844.72,
+          "gross_planning_proxy_m3": 11262.92
+        }
+      ],
+      "water_proxy_m3": 14358.8,
+      "budget_difference_m3": 141.2,
+      "within_total_budget": true,
+      "relative_water_score": 70.4,
+      "diversity_heuristic": 100.0,
+      "comparison_score": 83.7,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "Includes a legume; potential rotation-diversity benefit, not measured soil-N gain.",
+        "Historical 2025 climate analogue only; not a weather or yield forecast."
+      ],
+      "rank": 2
+    },
+    {
+      "id": "wheat-sunflower",
+      "winter_crop": "wheat",
+      "summer_crop": "sunflower",
+      "crops": [
+        {
+          "id": "wheat",
+          "name": "Winter wheat (grain)",
+          "season": "winter",
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-03-09",
+          "crop_et_mm": 293.98,
+          "gross_planning_proxy_m3": 3919.76
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower (oilseed)",
+          "season": "summer",
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-21",
+          "crop_et_mm": 818.76,
+          "gross_planning_proxy_m3": 10916.8
+        }
+      ],
+      "water_proxy_m3": 14836.56,
+      "budget_difference_m3": -336.56,
+      "within_total_budget": false,
+      "relative_water_score": 29.6,
+      "diversity_heuristic": 50.0,
+      "comparison_score": 38.8,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "First season repeats the previous crop family; check crop-specific disease history.",
+        "Historical 2025 climate analogue only; not a weather or yield forecast."
+      ],
+      "rank": 3
+    },
+    {
+      "id": "wheat-maize",
+      "winter_crop": "wheat",
+      "summer_crop": "maize",
+      "crops": [
+        {
+          "id": "wheat",
+          "name": "Winter wheat (grain)",
+          "season": "winter",
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-03-09",
+          "crop_et_mm": 293.98,
+          "gross_planning_proxy_m3": 3919.76
+        },
+        {
+          "id": "maize",
+          "name": "Field maize (grain)",
+          "season": "summer",
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-16",
+          "crop_et_mm": 844.72,
+          "gross_planning_proxy_m3": 11262.92
+        }
+      ],
+      "water_proxy_m3": 15182.68,
+      "budget_difference_m3": -682.68,
+      "within_total_budget": false,
+      "relative_water_score": 0.0,
+      "diversity_heuristic": 0.0,
+      "comparison_score": 0.0,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "Same crop family in consecutive seasons; investigate rotation-specific pest risks.",
+        "First season repeats the previous crop family; check crop-specific disease history.",
+        "Historical 2025 climate analogue only; not a weather or yield forecast."
+      ],
+      "rank": 4
+    }
+  ],
+  "method": {
+    "crop_water": "ETc=Kc*ET0 (FAO-56)",
+    "gross_water": "gross planning proxy = ETc/assumed efficiency (no rainfall credit)",
+    "relative_score": "0-100 comparative weighted water and family-diversity heuristic; NOT probability or validated suitability",
+    "reference_year": 2025,
+    "future_crop_years": [
+      2026,
+      2027
+    ],
+    "crop_windows": {
+      "winter": "Nov 10, 2026 (illustrative)",
+      "summer": "May 15, 2027 (illustrative)"
+    },
+    "crop_sources": {
+      "kc": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+      "rotation": "https://www.fao.org/conservation-agriculture/in-practice/species-diversification/en/",
+      "egypt_calendar": "https://barp.org.in/node/2978"
+    }
+  },
+  "limitations": [
+    "Screening prototype only; not a planting, irrigation, fertilizer, or yield recommendation.",
+    "All proposed future crop windows reuse 2025 NASA seasonal observations as a historical analogue; NOT forecasts or a multi-year climatology.",
+    "FAO-56 Kc and stage durations are published regional examples; values, crop calendar and growing season need local agronomist calibration.",
+    "Gross water proxy = sum(Kc*ET0)*area/irrigation-efficiency, with no effective-rainfall credit, soil water balance, salinity, or irrigation scheduling.",
+    "Annual total budget can conceal seasonal water shortages; daily available water was not modeled.",
+    "Soil texture is collected but NOT used to claim suitability; soil tests, salinity and drainage remain unmodeled.",
+    "Diversity score is an explicit family-change heuristic, not a measured soil-health, pest-risk, productivity or nitrogen score.",
+    "NASA POWER spatial grids are not sensors on the individual farm; location is fixed to the Nile Delta pilot point.",
+    "No ML model trained, validated or used. SMAP, HLS and GAEZ are not yet integrated."
+  ]
+}

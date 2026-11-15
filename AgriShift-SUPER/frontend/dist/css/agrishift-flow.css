@@ -1,0 +1,213 @@
+/* AGRISHIFT / FLOW EDITION · native transitions and bespoke menu.
+   Inspired by the pace and full-screen editorial navigation in the supplied video.
+   All visuals, wording, palette, layout and implementation are original AgriShift work. */
+:root{
+  --agri-flow-ink:#092a37;
+  --agri-flow-cyan:#18c9ea;
+  --agri-flow-lime:#a5eb37;
+  --agri-flow-cream:#f5f3e9;
+  --agri-flow-mint:#c7edb4;
+  --agri-flow-ease:cubic-bezier(.76,0,.20,1);
+  --agri-flow-quick:cubic-bezier(.22,1,.36,1);
+}
+html{scroll-behavior:smooth;scroll-padding-top:98px}
+body.cinema-page{scrollbar-gutter:stable}
+.cinema-menu-overlay.agri-mega-menu{
+  z-index:520;display:flex;flex-direction:column;justify-content:space-between;
+  visibility:hidden;opacity:1;transform:none;clip-path:inset(0 0 100% 0);
+  background:linear-gradient(133deg,#dcf6c2 0%,#bbe982 43%,#a9e58f 100%);
+  color:var(--agri-flow-ink);overflow-x:hidden;overflow-y:auto;
+  transition:clip-path .82s var(--agri-flow-ease),visibility .82s linear;
+  isolation:isolate;
+}
+.cinema-menu-overlay.agri-mega-menu:before{
+  content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(circle at 92% 76%,rgba(255,255,255,.6),transparent 30%),
+    radial-gradient(circle at 12% 7%,rgba(255,255,255,.32),transparent 28%),
+    radial-gradient(#154c4520 .7px,transparent 1px);
+  background-size:auto,auto,37px 37px;
+}
+.cinema-menu-overlay.agri-mega-menu.is-open{
+  visibility:visible;opacity:1;transform:none;clip-path:inset(0 0 0 0);
+}
+.agri-flow-menu-top,.agri-flow-menu-foot{
+  position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;
+  padding:clamp(17px,2.15vw,33px) clamp(23px,4.6vw,85px);gap:22px;
+}
+.agri-flow-menu-top{min-height:88px;flex:none}
+.agri-flow-menu-brand{display:flex;align-items:center;gap:11px;color:#0a2e36!important;text-decoration:none}
+.agri-flow-menu-brand img{width:42px;height:42px}
+.agri-flow-menu-brand span{display:flex;flex-direction:column}
+.agri-flow-menu-brand strong{font:800 22px/1.02 var(--heading,Arial,sans-serif);letter-spacing:-1.15px}
+.agri-flow-menu-brand small{font:700 8px/1.5 var(--heading,Arial,sans-serif);letter-spacing:1.6px}
+.agri-flow-menu-edition{margin:auto;color:#366052;font:800 10px var(--heading,Arial,sans-serif);letter-spacing:1.6px;text-align:center}
+.cinema-menu-close.agri-flow-menu-close{
+  position:static;display:inline-flex;align-items:center;gap:15px;border-radius:999px;
+  padding:8px 10px 8px 18px;color:#eaffea;border:1px solid #0f4651;
+  background:#0b3440;font:800 11px/1 var(--heading,Arial,sans-serif);letter-spacing:1.3px;
+  cursor:pointer;transition:background .25s ease,transform .25s ease;
+}
+.agri-flow-menu-close span{display:grid;place-items:center;width:34px;height:34px;line-height:1;border-radius:50%;background:#a5eb37;color:#0c3040;font-size:24px}
+.agri-flow-menu-close:hover{background:#155766;transform:translateY(-1px)}
+.cinema-menu-inner.agri-flow-menu-inner{width:auto;max-width:1580px;margin:auto 0;padding:12px clamp(23px,5.3vw,96px) 34px;min-height:0;position:relative;display:block}
+.agri-flow-menu-eyebrow{display:flex;justify-content:space-between;gap:15px;max-width:1000px;margin:0 0 12px;color:#3c6757;font:850 10px/1.4 var(--heading,Arial,sans-serif);letter-spacing:2.2px}
+.agri-flow-menu-inner nav{position:relative;z-index:2;display:flex;flex-direction:column;width:min(100%,1080px);margin:0}
+.agri-flow-menu-inner nav .agri-flow-menu-link{
+  display:flex;align-items:baseline;justify-content:space-between;gap:18px;position:relative;
+  padding:clamp(7px,1.25vh,16px) clamp(2px,1.4vw,18px) clamp(8px,1.45vh,17px);
+  border-bottom:1px solid #0d4b4563;color:#10333f!important;text-decoration:none;
+  font:500 clamp(43px,6.25vw,104px)/.98 Georgia,'Times New Roman',serif;
+  letter-spacing:-.067em;overflow:hidden;
+  transform:translate3d(0,55px,0);opacity:0;
+  transition:transform .65s var(--agri-flow-quick),opacity .55s ease,color .24s ease,background .24s ease,padding-left .28s ease;
+}
+.agri-flow-menu-link:before{content:'';position:absolute;inset:0 100% 0 0;z-index:-1;background:#123a44;transition:inset .42s var(--agri-flow-ease)}
+.agri-flow-menu-link:hover:before,.agri-flow-menu-link:focus-visible:before{inset:0 0 0 0}
+.agri-flow-menu-inner nav .agri-flow-menu-link:hover,.agri-flow-menu-inner nav .agri-flow-menu-link:focus-visible{
+  color:#f4ffe9!important;padding-left:clamp(13px,2.25vw,32px);
+}
+.agri-flow-menu-inner nav .agri-flow-menu-link.is-current{color:#286e53!important}
+.agri-flow-menu-inner nav .agri-flow-menu-link.is-current:hover{color:#f4ffe9!important}
+.agri-flow-menu-link-side{display:flex;align-items:center;gap:clamp(10px,2vw,34px);align-self:center;flex:none;font-family:var(--heading,Arial,sans-serif);letter-spacing:0}
+.agri-flow-link-sub{font:800 9px/1.4 var(--heading,Arial,sans-serif);letter-spacing:1px;white-space:nowrap;opacity:.66}
+.agri-flow-index{font:800 13px/1 var(--heading,Arial,sans-serif);letter-spacing:0;display:flex;align-items:center;gap:7px}
+.agri-flow-index span{display:inline-flex;align-items:center;justify-content:center;border:1px solid #1c554b88;border-radius:50%;height:30px;width:30px;font-size:16px;font-weight:500;transition:transform .25s}
+.agri-flow-menu-link:hover .agri-flow-index span{transform:rotate(45deg)}
+.cinema-menu-overlay.is-open .agri-flow-menu-link{transform:translate3d(0,0,0);opacity:1}
+.cinema-menu-overlay.is-open .agri-flow-menu-link:nth-child(1){transition-delay:135ms}
+.cinema-menu-overlay.is-open .agri-flow-menu-link:nth-child(2){transition-delay:175ms}
+.cinema-menu-overlay.is-open .agri-flow-menu-link:nth-child(3){transition-delay:215ms}
+.cinema-menu-overlay.is-open .agri-flow-menu-link:nth-child(4){transition-delay:255ms}
+.cinema-menu-overlay.is-open .agri-flow-menu-link:nth-child(5){transition-delay:295ms}
+.cinema-menu-overlay.is-open .agri-flow-menu-link:nth-child(6){transition-delay:335ms}
+.agri-flow-menu-preview{
+  position:absolute;z-index:1;right:clamp(16px,4vw,78px);top:24%;width:clamp(135px,16vw,250px);height:clamp(175px,24vw,320px);
+  margin:0;overflow:hidden;border:6px solid #f7ffe8;border-radius:130px 130px 16px 16px;
+  box-shadow:0 28px 55px #08322b4f;transform:rotate(8deg) translateY(18px);opacity:0;
+  transition:opacity .6s ease .2s,transform .7s var(--agri-flow-quick) .2s;pointer-events:none;
+}
+.agri-flow-menu-preview img{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .22s ease,transform .8s ease}
+.agri-flow-menu-preview figcaption{position:absolute;bottom:0;left:0;right:0;padding:24px 13px 12px;background:linear-gradient(transparent,#071b29d0);color:#eafff3;font:800 9px var(--heading,Arial,sans-serif);letter-spacing:1.3px}
+.cinema-menu-overlay.is-open .agri-flow-menu-preview{opacity:1;transform:rotate(8deg) translateY(0)}
+.agri-flow-menu-foot{padding-top:13px;padding-bottom:24px;color:#356355;border-top:1px solid #1d62552d;font:800 9px/1.5 var(--heading,Arial,sans-serif);letter-spacing:1.4px;flex:none}
+body.cinema-menu-open{overflow:hidden}
+/* Native cross-page curtain: liquid-green top edge over a dark marine backing. */
+.agri-flow-curtain{
+  position:fixed;inset:-1px;z-index:900;pointer-events:none;
+  background:linear-gradient(120deg,#082635 4%,#103e46 58%,#0c2d36 100%);
+  display:grid;place-items:center;transform:translate3d(0,104%,0);
+  transition:transform .79s var(--agri-flow-ease);
+  will-change:transform;overflow:hidden;
+}
+.agri-flow-curtain:before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 76% 34%,#18c9ea19,transparent 36%),radial-gradient(circle at 17% 79%,#a5eb372b,transparent 31%);pointer-events:none}
+.agri-flow-curtain:after{content:'';position:absolute;left:-5%;right:-5%;top:-24px;height:28px;background:#b6eb63;border-radius:60% 35% 0 0}
+.agri-flow-curtain.is-covering,html.agri-flow-arriving .agri-flow-curtain{transform:translate3d(0,0,0)}
+html.agri-flow-arriving .agri-flow-curtain.is-revealing,
+html.agri-flow-local-revealing .agri-flow-curtain.is-revealing{transform:translate3d(0,-104%,0)}
+.agri-flow-curtain-content{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;color:#f3f8e9;gap:14px;transform:translateY(10px);opacity:.8;transition:transform .4s ease,opacity .4s ease}
+.agri-flow-curtain.is-covering .agri-flow-curtain-content,.agri-flow-arriving .agri-flow-curtain-content{transform:translateY(0);opacity:1}
+.agri-flow-curtain-content img{width:64px;height:64px}
+.agri-flow-curtain-kicker,.agri-flow-curtain-foot{font:800 10px/1.4 var(--heading,Arial,sans-serif);letter-spacing:3px;color:#a5eb37}
+.agri-flow-curtain-content strong{font:500 clamp(46px,9vw,126px)/.94 Georgia,serif;letter-spacing:-.065em;color:#f1f9e5}
+.agri-flow-curtain-foot{font-size:9px;color:#a2bdc2}
+/* Intro / chapter rhythm: calm moves that complement transitions. */
+.cinema-page .cinema-reveal{transition:opacity .85s ease,transform 1.05s cubic-bezier(.16,1,.3,1)}
+.cinema-page .cinema-reveal.is-visible{transition-delay:.035s}
+.cinema-page .pantry-chapter .pantry-product{transition:transform .62s cubic-bezier(.16,1,.3,1),box-shadow .55s ease}
+.cinema-page .dp-crop-tile img{transition:transform 1.1s cubic-bezier(.16,1,.3,1)}
+.cinema-page .dp-crop-tile:hover img{transform:scale(1.075)}
+/* Fixed chrome above photo sections. */
+.dp-home-nav{position:sticky;top:0;z-index:120;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.dispensa-edition .studio-topbar{z-index:120}
+/* Menu should always exceed page-header and navigation drawers. */
+.cinema-menu-overlay.agri-mega-menu{z-index:530}
+/* Preserve mobile scroll performance by avoiding expensive global blur filters. */
+@media(max-height:780px) and (min-width:801px){
+ .agri-flow-menu-top{min-height:64px;padding-top:10px;padding-bottom:8px}
+ .agri-flow-menu-inner nav .agri-flow-menu-link{font-size:clamp(40px,5.2vw,83px);padding-top:4px;padding-bottom:6px}
+ .agri-flow-menu-foot{padding-top:8px;padding-bottom:9px}
+}
+@media(max-width:1080px){
+ .agri-flow-menu-preview{display:none}
+ .agri-flow-menu-inner nav{width:100%}
+ .agri-flow-link-sub{display:none}
+}
+@media(max-width:650px){
+ .agri-flow-menu-top{min-height:70px;padding:13px 18px;gap:8px}
+ .agri-flow-menu-brand img{height:35px;width:35px}
+ .agri-flow-menu-brand strong{font-size:19px}
+ .agri-flow-menu-brand small{font-size:7px;letter-spacing:.9px}
+ .agri-flow-menu-edition{display:none}
+ .cinema-menu-close.agri-flow-menu-close{font-size:9px;padding:5px 6px 5px 12px;gap:7px}
+ .agri-flow-menu-close span{height:27px;width:27px;font-size:20px}
+ .cinema-menu-inner.agri-flow-menu-inner{padding:15px 19px 25px;align-self:stretch;width:100%}
+ .agri-flow-menu-eyebrow{font-size:8px;letter-spacing:1.4px}
+ .agri-flow-menu-eyebrow span:nth-child(2){display:none}
+ .agri-flow-menu-inner nav .agri-flow-menu-link{font-size:clamp(38px,9vw,67px);padding:13px 2px 15px}
+ .agri-flow-index{font-size:10px}
+ .agri-flow-index span{height:24px;width:24px;font-size:13px}
+ .agri-flow-menu-foot{padding:15px 19px;font-size:8px;letter-spacing:.8px}
+ .agri-flow-menu-foot span:nth-child(2){display:none}
+ .agri-flow-curtain-content img{width:52px;height:52px}
+ .agri-flow-curtain-kicker{letter-spacing:1.6px}
+}
+@media(max-width:380px){.agri-flow-menu-inner nav .agri-flow-menu-link{font-size:36px}.agri-flow-menu-brand small{display:none}}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto!important}
+ .cinema-menu-overlay.agri-mega-menu,.cinema-menu-overlay.is-open .agri-flow-menu-link,
+ .agri-flow-curtain,.agri-flow-curtain-content,.agri-flow-menu-preview{transition-duration:.01ms!important;transition-delay:0s!important}
+ .cinema-page .cinema-reveal{transition:none!important}
+}
+/* Layout refinement after live rendering: full-bleed menu with a separate photo column. */
+.cinema-menu-overlay.agri-mega-menu{align-items:stretch}
+.cinema-menu-inner.agri-flow-menu-inner{width:100%;max-width:none;align-self:stretch}
+@media(min-width:1081px){.agri-flow-menu-inner nav{width:calc(100% - clamp(230px,24vw,360px))}.agri-flow-menu-preview{right:clamp(45px,5vw,92px)}}
+
+
+/* FINAL VISUAL REFINEMENT: text-free opening photo collage + hero team badge. */
+.pantry-cover-art .pantry-cover-frame figcaption,
+.pantry-cover-art .pantry-art-stamp {display:none!important;}
+/* Keep photographs vivid and unobscured: there is no over-image text to protect. */
+.pantry-cover-art .pantry-cover-frame::after{display:none!important;}
+.pantry-cover-art .pantry-cover-frame img{filter:none;}
+.dispensa-edition .studio-topbar{min-height:104px;padding-top:9px;padding-bottom:9px;}
+.dispensa-edition .studio-topbar .topbar-left{display:flex;align-items:center;gap:18px;min-width:0;flex-shrink:0;}
+.agri-topbar-team-logo{
+ display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;
+ width:86px;height:86px;border-radius:50%;padding:4px;overflow:hidden;
+ background:linear-gradient(145deg,#faffeb,#dbefdc);
+ border:1px solid rgba(12,73,68,.21);
+ box-shadow:0 4px 12px rgba(6,43,46,.12),0 0 0 3px rgba(165,235,55,.15);
+ transition:transform .25s ease,box-shadow .25s ease;
+}
+.agri-topbar-team-logo img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover;}
+.agri-topbar-team-logo:hover,.agri-topbar-team-logo:focus-visible{
+ transform:translateY(-2px);
+ box-shadow:0 9px 24px rgba(6,43,46,.19),0 0 0 4px rgba(165,235,55,.25);
+}
+.agri-topbar-team-logo:focus-visible{outline:3px solid #217e83;outline-offset:3px;}
+@media(max-width:760px){
+ .dispensa-edition .studio-topbar{min-height:82px;padding:8px 14px;gap:8px;}
+ .dispensa-edition .studio-topbar .topbar-left{gap:10px;}
+ .agri-topbar-team-logo{width:60px;height:60px;padding:3px;}
+ .dispensa-edition .studio-topbar .topbar-right{gap:7px;min-width:0;}
+ .dispensa-edition .studio-topbar .topbar-home{display:none;}
+ .dispensa-edition .studio-topbar .server-state{max-width:98px;overflow:hidden;text-overflow:ellipsis;}
+}
+@media(max-width:440px){
+ .dispensa-edition .studio-topbar{padding:7px 10px;gap:5px;}
+ .dispensa-edition .studio-topbar .topbar-left{gap:6px;}
+ .agri-topbar-team-logo{width:55px;height:55px;padding:2px;}
+ .dispensa-edition .studio-topbar .server-state{max-width:78px;font-size:8px;padding:5px 7px;}
+ .dispensa-edition .studio-topbar .studio-menu-btn{padding:7px 9px;}
+}
+@media(prefers-reduced-motion:reduce){.agri-topbar-team-logo{transition:none!important;transform:none!important;}}
+
+/* Consistent dark cover/reveal for intra-dashboard menu destinations as well. */
+html.agri-flow-local-revealing .agri-flow-curtain{pointer-events:auto}
+
+/* Animate the three opening images from the first visit, without a click.
+   The Home-only rAF engine provides smoothing and pauses offscreen. */
+@media (prefers-reduced-motion: no-preference) {
+  .dispensa-home .pantry-cover-art .pantry-cover-frame { transition:none; }
+}

@@ -1,0 +1,2244 @@
+{
+  "project": "AgriShift",
+  "status": "RESEARCH_PROTOTYPE",
+  "model": "FAO56_ETc_plus_explainable_rotation_screening",
+  "climate": {
+    "year": 2025,
+    "latitude": 30.5,
+    "longitude": 31.5,
+    "average_air_temperature_c": 23.2,
+    "annual_rain_mm": 39.81,
+    "annual_reference_et0_mm": 1995.712,
+    "daily_mean_reference_et0_mm": 5.468,
+    "source": "NASA POWER daily point API, processed with FAO-56",
+    "time_standard": "LST",
+    "monthly_eto": [
+      {
+        "month": "2025-01",
+        "daily_mean_mm": 2.249,
+        "eto_total_mm": 69.725
+      },
+      {
+        "month": "2025-02",
+        "daily_mean_mm": 2.914,
+        "eto_total_mm": 81.583
+      },
+      {
+        "month": "2025-03",
+        "daily_mean_mm": 4.667,
+        "eto_total_mm": 144.681
+      },
+      {
+        "month": "2025-04",
+        "daily_mean_mm": 5.95,
+        "eto_total_mm": 178.508
+      },
+      {
+        "month": "2025-05",
+        "daily_mean_mm": 7.936,
+        "eto_total_mm": 246.003
+      },
+      {
+        "month": "2025-06",
+        "daily_mean_mm": 8.452,
+        "eto_total_mm": 253.564
+      },
+      {
+        "month": "2025-07",
+        "daily_mean_mm": 8.537,
+        "eto_total_mm": 264.659
+      },
+      {
+        "month": "2025-08",
+        "daily_mean_mm": 7.884,
+        "eto_total_mm": 244.398
+      },
+      {
+        "month": "2025-09",
+        "daily_mean_mm": 6.301,
+        "eto_total_mm": 189.035
+      },
+      {
+        "month": "2025-10",
+        "daily_mean_mm": 4.756,
+        "eto_total_mm": 147.436
+      },
+      {
+        "month": "2025-11",
+        "daily_mean_mm": 3.259,
+        "eto_total_mm": 97.784
+      },
+      {
+        "month": "2025-12",
+        "daily_mean_mm": 2.527,
+        "eto_total_mm": 78.336
+      }
+    ],
+    "coordinate_precision_deg": 0.0001,
+    "history_only": true
+  },
+  "inputs": {
+    "planning_seasons": 4,
+    "allowed_crops": null,
+    "strict_family_rotation": false,
+    "max_results": 64,
+    "area_ha": 1.0,
+    "water_budget_m3": 30000.0,
+    "irrigation_efficiency": 0.75,
+    "previous_crop": "wheat",
+    "priority": "balanced",
+    "soil_type": "loam",
+    "latitude": 30.5,
+    "longitude": 31.5,
+    "soil_awc_mm_per_m": null,
+    "soil_ece_ds_m": null
+  },
+  "plans": [
+    {
+      "id": "faba-sunflower-faba-sunflower",
+      "winter_crop": "faba",
+      "summer_crop": "sunflower",
+      "sequence": [
+        "faba",
+        "sunflower",
+        "faba",
+        "sunflower"
+      ],
+      "crops": [
+        {
+          "id": "faba",
+          "name": "Faba bean (fresh harvest)",
+          "family": "legume",
+          "season": "winter",
+          "slot": 1,
+          "season_year": 2026,
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-02-17",
+          "crop_et_mm": 232.19,
+          "gross_planning_proxy_m3": 3095.88
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower (oilseed)",
+          "family": "oilseed",
+          "season": "summer",
+          "slot": 2,
+          "season_year": 2027,
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-21",
+          "crop_et_mm": 818.76,
+          "gross_planning_proxy_m3": 10916.8
+        },
+        {
+          "id": "faba",
+          "name": "Faba bean (fresh harvest)",
+          "family": "legume",
+          "season": "winter",
+          "slot": 3,
+          "season_year": 2027,
+          "planting_date": "2027-11-10",
+          "harvest_estimated_date": "2028-02-17",
+          "crop_et_mm": 232.19,
+          "gross_planning_proxy_m3": 3095.88
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower (oilseed)",
+          "family": "oilseed",
+          "season": "summer",
+          "slot": 4,
+          "season_year": 2028,
+          "planting_date": "2028-05-15",
+          "harvest_estimated_date": "2028-09-21",
+          "crop_et_mm": 818.76,
+          "gross_planning_proxy_m3": 10916.8
+        }
+      ],
+      "soil_screening": {
+        "winter": {
+          "crop_id": "faba",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 0.5,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.45,
+          "total_available_water_taw_mm": 77.5,
+          "readily_available_water_raw_mm": 34.88,
+          "midseason_etc_reference_mm_day": 2.63,
+          "notional_buffer_days": 13.27,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 1.6,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "summer": {
+          "crop_id": "sunflower",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 0.8,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.45,
+          "total_available_water_taw_mm": 124.0,
+          "readily_available_water_raw_mm": 55.8,
+          "midseason_etc_reference_mm_day": 9.01,
+          "notional_buffer_days": 6.19,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": null,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "salinity_concern_count": 0,
+        "assessment_status": "provisional_crop_and_soil_screening"
+      },
+      "water_proxy_m3": 28025.36,
+      "budget_difference_m3": 1974.64,
+      "within_total_budget": true,
+      "relative_water_score": 100.0,
+      "diversity_heuristic": 100.0,
+      "comparison_score": 100.0,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "Includes a legume; possible rotation benefit, NOT measured soil nitrogen gain.",
+        "Historical 2025 seasonal analogue used for every year; no weather forecast or yield prediction."
+      ],
+      "rank": 1
+    },
+    {
+      "id": "faba-maize-faba-sunflower",
+      "winter_crop": "faba",
+      "summer_crop": "maize",
+      "sequence": [
+        "faba",
+        "maize",
+        "faba",
+        "sunflower"
+      ],
+      "crops": [
+        {
+          "id": "faba",
+          "name": "Faba bean (fresh harvest)",
+          "family": "legume",
+          "season": "winter",
+          "slot": 1,
+          "season_year": 2026,
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-02-17",
+          "crop_et_mm": 232.19,
+          "gross_planning_proxy_m3": 3095.88
+        },
+        {
+          "id": "maize",
+          "name": "Field maize (grain)",
+          "family": "cereal",
+          "season": "summer",
+          "slot": 2,
+          "season_year": 2027,
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-16",
+          "crop_et_mm": 844.72,
+          "gross_planning_proxy_m3": 11262.92
+        },
+        {
+          "id": "faba",
+          "name": "Faba bean (fresh harvest)",
+          "family": "legume",
+          "season": "winter",
+          "slot": 3,
+          "season_year": 2027,
+          "planting_date": "2027-11-10",
+          "harvest_estimated_date": "2028-02-17",
+          "crop_et_mm": 232.19,
+          "gross_planning_proxy_m3": 3095.88
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower (oilseed)",
+          "family": "oilseed",
+          "season": "summer",
+          "slot": 4,
+          "season_year": 2028,
+          "planting_date": "2028-05-15",
+          "harvest_estimated_date": "2028-09-21",
+          "crop_et_mm": 818.76,
+          "gross_planning_proxy_m3": 10916.8
+        }
+      ],
+      "soil_screening": {
+        "winter": {
+          "crop_id": "faba",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 0.5,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.45,
+          "total_available_water_taw_mm": 77.5,
+          "readily_available_water_raw_mm": 34.88,
+          "midseason_etc_reference_mm_day": 2.63,
+          "notional_buffer_days": 13.27,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 1.6,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "summer": {
+          "crop_id": "maize",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 1.0,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.55,
+          "total_available_water_taw_mm": 155.0,
+          "readily_available_water_raw_mm": 85.25,
+          "midseason_etc_reference_mm_day": 9.94,
+          "notional_buffer_days": 8.58,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 1.7,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "salinity_concern_count": 0,
+        "assessment_status": "provisional_crop_and_soil_screening"
+      },
+      "water_proxy_m3": 28371.48,
+      "budget_difference_m3": 1628.52,
+      "within_total_budget": true,
+      "relative_water_score": 85.2,
+      "diversity_heuristic": 100.0,
+      "comparison_score": 91.9,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "Includes a legume; possible rotation benefit, NOT measured soil nitrogen gain.",
+        "Historical 2025 seasonal analogue used for every year; no weather forecast or yield prediction."
+      ],
+      "rank": 2
+    },
+    {
+      "id": "faba-sunflower-faba-maize",
+      "winter_crop": "faba",
+      "summer_crop": "sunflower",
+      "sequence": [
+        "faba",
+        "sunflower",
+        "faba",
+        "maize"
+      ],
+      "crops": [
+        {
+          "id": "faba",
+          "name": "Faba bean (fresh harvest)",
+          "family": "legume",
+          "season": "winter",
+          "slot": 1,
+          "season_year": 2026,
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-02-17",
+          "crop_et_mm": 232.19,
+          "gross_planning_proxy_m3": 3095.88
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower (oilseed)",
+          "family": "oilseed",
+          "season": "summer",
+          "slot": 2,
+          "season_year": 2027,
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-21",
+          "crop_et_mm": 818.76,
+          "gross_planning_proxy_m3": 10916.8
+        },
+        {
+          "id": "faba",
+          "name": "Faba bean (fresh harvest)",
+          "family": "legume",
+          "season": "winter",
+          "slot": 3,
+          "season_year": 2027,
+          "planting_date": "2027-11-10",
+          "harvest_estimated_date": "2028-02-17",
+          "crop_et_mm": 232.19,
+          "gross_planning_proxy_m3": 3095.88
+        },
+        {
+          "id": "maize",
+          "name": "Field maize (grain)",
+          "family": "cereal",
+          "season": "summer",
+          "slot": 4,
+          "season_year": 2028,
+          "planting_date": "2028-05-15",
+          "harvest_estimated_date": "2028-09-16",
+          "crop_et_mm": 844.72,
+          "gross_planning_proxy_m3": 11262.92
+        }
+      ],
+      "soil_screening": {
+        "winter": {
+          "crop_id": "faba",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 0.5,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.45,
+          "total_available_water_taw_mm": 77.5,
+          "readily_available_water_raw_mm": 34.88,
+          "midseason_etc_reference_mm_day": 2.63,
+          "notional_buffer_days": 13.27,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 1.6,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "summer": {
+          "crop_id": "sunflower",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 0.8,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.45,
+          "total_available_water_taw_mm": 124.0,
+          "readily_available_water_raw_mm": 55.8,
+          "midseason_etc_reference_mm_day": 9.01,
+          "notional_buffer_days": 6.19,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": null,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "salinity_concern_count": 0,
+        "assessment_status": "provisional_crop_and_soil_screening"
+      },
+      "water_proxy_m3": 28371.48,
+      "budget_difference_m3": 1628.52,
+      "within_total_budget": true,
+      "relative_water_score": 85.2,
+      "diversity_heuristic": 100.0,
+      "comparison_score": 91.9,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "Includes a legume; possible rotation benefit, NOT measured soil nitrogen gain.",
+        "Historical 2025 seasonal analogue used for every year; no weather forecast or yield prediction."
+      ],
+      "rank": 3
+    },
+    {
+      "id": "faba-maize-faba-maize",
+      "winter_crop": "faba",
+      "summer_crop": "maize",
+      "sequence": [
+        "faba",
+        "maize",
+        "faba",
+        "maize"
+      ],
+      "crops": [
+        {
+          "id": "faba",
+          "name": "Faba bean (fresh harvest)",
+          "family": "legume",
+          "season": "winter",
+          "slot": 1,
+          "season_year": 2026,
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-02-17",
+          "crop_et_mm": 232.19,
+          "gross_planning_proxy_m3": 3095.88
+        },
+        {
+          "id": "maize",
+          "name": "Field maize (grain)",
+          "family": "cereal",
+          "season": "summer",
+          "slot": 2,
+          "season_year": 2027,
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-16",
+          "crop_et_mm": 844.72,
+          "gross_planning_proxy_m3": 11262.92
+        },
+        {
+          "id": "faba",
+          "name": "Faba bean (fresh harvest)",
+          "family": "legume",
+          "season": "winter",
+          "slot": 3,
+          "season_year": 2027,
+          "planting_date": "2027-11-10",
+          "harvest_estimated_date": "2028-02-17",
+          "crop_et_mm": 232.19,
+          "gross_planning_proxy_m3": 3095.88
+        },
+        {
+          "id": "maize",
+          "name": "Field maize (grain)",
+          "family": "cereal",
+          "season": "summer",
+          "slot": 4,
+          "season_year": 2028,
+          "planting_date": "2028-05-15",
+          "harvest_estimated_date": "2028-09-16",
+          "crop_et_mm": 844.72,
+          "gross_planning_proxy_m3": 11262.92
+        }
+      ],
+      "soil_screening": {
+        "winter": {
+          "crop_id": "faba",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 0.5,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.45,
+          "total_available_water_taw_mm": 77.5,
+          "readily_available_water_raw_mm": 34.88,
+          "midseason_etc_reference_mm_day": 2.63,
+          "notional_buffer_days": 13.27,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 1.6,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "summer": {
+          "crop_id": "maize",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 1.0,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.55,
+          "total_available_water_taw_mm": 155.0,
+          "readily_available_water_raw_mm": 85.25,
+          "midseason_etc_reference_mm_day": 9.94,
+          "notional_buffer_days": 8.58,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 1.7,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "salinity_concern_count": 0,
+        "assessment_status": "provisional_crop_and_soil_screening"
+      },
+      "water_proxy_m3": 28717.6,
+      "budget_difference_m3": 1282.4,
+      "within_total_budget": true,
+      "relative_water_score": 70.4,
+      "diversity_heuristic": 100.0,
+      "comparison_score": 83.7,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "Includes a legume; possible rotation benefit, NOT measured soil nitrogen gain.",
+        "Historical 2025 seasonal analogue used for every year; no weather forecast or yield prediction."
+      ],
+      "rank": 4
+    },
+    {
+      "id": "faba-sunflower-wheat-sunflower",
+      "winter_crop": "faba",
+      "summer_crop": "sunflower",
+      "sequence": [
+        "faba",
+        "sunflower",
+        "wheat",
+        "sunflower"
+      ],
+      "crops": [
+        {
+          "id": "faba",
+          "name": "Faba bean (fresh harvest)",
+          "family": "legume",
+          "season": "winter",
+          "slot": 1,
+          "season_year": 2026,
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-02-17",
+          "crop_et_mm": 232.19,
+          "gross_planning_proxy_m3": 3095.88
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower (oilseed)",
+          "family": "oilseed",
+          "season": "summer",
+          "slot": 2,
+          "season_year": 2027,
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-21",
+          "crop_et_mm": 818.76,
+          "gross_planning_proxy_m3": 10916.8
+        },
+        {
+          "id": "wheat",
+          "name": "Winter wheat (grain)",
+          "family": "cereal",
+          "season": "winter",
+          "slot": 3,
+          "season_year": 2027,
+          "planting_date": "2027-11-10",
+          "harvest_estimated_date": "2028-03-08",
+          "crop_et_mm": 293.85,
+          "gross_planning_proxy_m3": 3917.97
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower (oilseed)",
+          "family": "oilseed",
+          "season": "summer",
+          "slot": 4,
+          "season_year": 2028,
+          "planting_date": "2028-05-15",
+          "harvest_estimated_date": "2028-09-21",
+          "crop_et_mm": 818.76,
+          "gross_planning_proxy_m3": 10916.8
+        }
+      ],
+      "soil_screening": {
+        "winter": {
+          "crop_id": "faba",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 0.5,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.45,
+          "total_available_water_taw_mm": 77.5,
+          "readily_available_water_raw_mm": 34.88,
+          "midseason_etc_reference_mm_day": 2.63,
+          "notional_buffer_days": 13.27,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 1.6,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "summer": {
+          "crop_id": "sunflower",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 0.8,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.45,
+          "total_available_water_taw_mm": 124.0,
+          "readily_available_water_raw_mm": 55.8,
+          "midseason_etc_reference_mm_day": 9.01,
+          "notional_buffer_days": 6.19,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": null,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "salinity_concern_count": 0,
+        "assessment_status": "provisional_crop_and_soil_screening"
+      },
+      "water_proxy_m3": 28847.45,
+      "budget_difference_m3": 1152.55,
+      "within_total_budget": true,
+      "relative_water_score": 64.8,
+      "diversity_heuristic": 100.0,
+      "comparison_score": 80.6,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "Includes a legume; possible rotation benefit, NOT measured soil nitrogen gain.",
+        "Historical 2025 seasonal analogue used for every year; no weather forecast or yield prediction."
+      ],
+      "rank": 5
+    },
+    {
+      "id": "wheat-sunflower-faba-sunflower",
+      "winter_crop": "wheat",
+      "summer_crop": "sunflower",
+      "sequence": [
+        "wheat",
+        "sunflower",
+        "faba",
+        "sunflower"
+      ],
+      "crops": [
+        {
+          "id": "wheat",
+          "name": "Winter wheat (grain)",
+          "family": "cereal",
+          "season": "winter",
+          "slot": 1,
+          "season_year": 2026,
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-03-09",
+          "crop_et_mm": 293.98,
+          "gross_planning_proxy_m3": 3919.76
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower (oilseed)",
+          "family": "oilseed",
+          "season": "summer",
+          "slot": 2,
+          "season_year": 2027,
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-21",
+          "crop_et_mm": 818.76,
+          "gross_planning_proxy_m3": 10916.8
+        },
+        {
+          "id": "faba",
+          "name": "Faba bean (fresh harvest)",
+          "family": "legume",
+          "season": "winter",
+          "slot": 3,
+          "season_year": 2027,
+          "planting_date": "2027-11-10",
+          "harvest_estimated_date": "2028-02-17",
+          "crop_et_mm": 232.19,
+          "gross_planning_proxy_m3": 3095.88
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower (oilseed)",
+          "family": "oilseed",
+          "season": "summer",
+          "slot": 4,
+          "season_year": 2028,
+          "planting_date": "2028-05-15",
+          "harvest_estimated_date": "2028-09-21",
+          "crop_et_mm": 818.76,
+          "gross_planning_proxy_m3": 10916.8
+        }
+      ],
+      "soil_screening": {
+        "winter": {
+          "crop_id": "wheat",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 1.5,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.55,
+          "total_available_water_taw_mm": 232.5,
+          "readily_available_water_raw_mm": 127.88,
+          "midseason_etc_reference_mm_day": 2.73,
+          "notional_buffer_days": 46.81,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 6.0,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "summer": {
+          "crop_id": "sunflower",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 0.8,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.45,
+          "total_available_water_taw_mm": 124.0,
+          "readily_available_water_raw_mm": 55.8,
+          "midseason_etc_reference_mm_day": 9.01,
+          "notional_buffer_days": 6.19,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": null,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "salinity_concern_count": 0,
+        "assessment_status": "provisional_crop_and_soil_screening"
+      },
+      "water_proxy_m3": 28849.24,
+      "budget_difference_m3": 1150.76,
+      "within_total_budget": true,
+      "relative_water_score": 64.8,
+      "diversity_heuristic": 75.0,
+      "comparison_score": 69.4,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "Includes a legume; possible rotation benefit, NOT measured soil nitrogen gain.",
+        "1 adjacent crop-family repeat(s) including previous crop when known; consider pest history. This is a warning, not automatic disease prediction.",
+        "Historical 2025 seasonal analogue used for every year; no weather forecast or yield prediction."
+      ],
+      "rank": 6
+    },
+    {
+      "id": "faba-maize-wheat-sunflower",
+      "winter_crop": "faba",
+      "summer_crop": "maize",
+      "sequence": [
+        "faba",
+        "maize",
+        "wheat",
+        "sunflower"
+      ],
+      "crops": [
+        {
+          "id": "faba",
+          "name": "Faba bean (fresh harvest)",
+          "family": "legume",
+          "season": "winter",
+          "slot": 1,
+          "season_year": 2026,
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-02-17",
+          "crop_et_mm": 232.19,
+          "gross_planning_proxy_m3": 3095.88
+        },
+        {
+          "id": "maize",
+          "name": "Field maize (grain)",
+          "family": "cereal",
+          "season": "summer",
+          "slot": 2,
+          "season_year": 2027,
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-16",
+          "crop_et_mm": 844.72,
+          "gross_planning_proxy_m3": 11262.92
+        },
+        {
+          "id": "wheat",
+          "name": "Winter wheat (grain)",
+          "family": "cereal",
+          "season": "winter",
+          "slot": 3,
+          "season_year": 2027,
+          "planting_date": "2027-11-10",
+          "harvest_estimated_date": "2028-03-08",
+          "crop_et_mm": 293.85,
+          "gross_planning_proxy_m3": 3917.97
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower (oilseed)",
+          "family": "oilseed",
+          "season": "summer",
+          "slot": 4,
+          "season_year": 2028,
+          "planting_date": "2028-05-15",
+          "harvest_estimated_date": "2028-09-21",
+          "crop_et_mm": 818.76,
+          "gross_planning_proxy_m3": 10916.8
+        }
+      ],
+      "soil_screening": {
+        "winter": {
+          "crop_id": "faba",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 0.5,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.45,
+          "total_available_water_taw_mm": 77.5,
+          "readily_available_water_raw_mm": 34.88,
+          "midseason_etc_reference_mm_day": 2.63,
+          "notional_buffer_days": 13.27,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 1.6,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "summer": {
+          "crop_id": "maize",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 1.0,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.55,
+          "total_available_water_taw_mm": 155.0,
+          "readily_available_water_raw_mm": 85.25,
+          "midseason_etc_reference_mm_day": 9.94,
+          "notional_buffer_days": 8.58,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 1.7,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "salinity_concern_count": 0,
+        "assessment_status": "provisional_crop_and_soil_screening"
+      },
+      "water_proxy_m3": 29193.57,
+      "budget_difference_m3": 806.43,
+      "within_total_budget": true,
+      "relative_water_score": 50.0,
+      "diversity_heuristic": 75.0,
+      "comparison_score": 61.2,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "Includes a legume; possible rotation benefit, NOT measured soil nitrogen gain.",
+        "1 adjacent crop-family repeat(s) including previous crop when known; consider pest history. This is a warning, not automatic disease prediction.",
+        "Historical 2025 seasonal analogue used for every year; no weather forecast or yield prediction."
+      ],
+      "rank": 7
+    },
+    {
+      "id": "faba-sunflower-wheat-maize",
+      "winter_crop": "faba",
+      "summer_crop": "sunflower",
+      "sequence": [
+        "faba",
+        "sunflower",
+        "wheat",
+        "maize"
+      ],
+      "crops": [
+        {
+          "id": "faba",
+          "name": "Faba bean (fresh harvest)",
+          "family": "legume",
+          "season": "winter",
+          "slot": 1,
+          "season_year": 2026,
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-02-17",
+          "crop_et_mm": 232.19,
+          "gross_planning_proxy_m3": 3095.88
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower (oilseed)",
+          "family": "oilseed",
+          "season": "summer",
+          "slot": 2,
+          "season_year": 2027,
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-21",
+          "crop_et_mm": 818.76,
+          "gross_planning_proxy_m3": 10916.8
+        },
+        {
+          "id": "wheat",
+          "name": "Winter wheat (grain)",
+          "family": "cereal",
+          "season": "winter",
+          "slot": 3,
+          "season_year": 2027,
+          "planting_date": "2027-11-10",
+          "harvest_estimated_date": "2028-03-08",
+          "crop_et_mm": 293.85,
+          "gross_planning_proxy_m3": 3917.97
+        },
+        {
+          "id": "maize",
+          "name": "Field maize (grain)",
+          "family": "cereal",
+          "season": "summer",
+          "slot": 4,
+          "season_year": 2028,
+          "planting_date": "2028-05-15",
+          "harvest_estimated_date": "2028-09-16",
+          "crop_et_mm": 844.72,
+          "gross_planning_proxy_m3": 11262.92
+        }
+      ],
+      "soil_screening": {
+        "winter": {
+          "crop_id": "faba",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 0.5,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.45,
+          "total_available_water_taw_mm": 77.5,
+          "readily_available_water_raw_mm": 34.88,
+          "midseason_etc_reference_mm_day": 2.63,
+          "notional_buffer_days": 13.27,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 1.6,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "summer": {
+          "crop_id": "sunflower",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 0.8,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.45,
+          "total_available_water_taw_mm": 124.0,
+          "readily_available_water_raw_mm": 55.8,
+          "midseason_etc_reference_mm_day": 9.01,
+          "notional_buffer_days": 6.19,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": null,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "salinity_concern_count": 0,
+        "assessment_status": "provisional_crop_and_soil_screening"
+      },
+      "water_proxy_m3": 29193.57,
+      "budget_difference_m3": 806.43,
+      "within_total_budget": true,
+      "relative_water_score": 50.0,
+      "diversity_heuristic": 75.0,
+      "comparison_score": 61.2,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "Includes a legume; possible rotation benefit, NOT measured soil nitrogen gain.",
+        "1 adjacent crop-family repeat(s) including previous crop when known; consider pest history. This is a warning, not automatic disease prediction.",
+        "Historical 2025 seasonal analogue used for every year; no weather forecast or yield prediction."
+      ],
+      "rank": 8
+    },
+    {
+      "id": "wheat-sunflower-faba-maize",
+      "winter_crop": "wheat",
+      "summer_crop": "sunflower",
+      "sequence": [
+        "wheat",
+        "sunflower",
+        "faba",
+        "maize"
+      ],
+      "crops": [
+        {
+          "id": "wheat",
+          "name": "Winter wheat (grain)",
+          "family": "cereal",
+          "season": "winter",
+          "slot": 1,
+          "season_year": 2026,
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-03-09",
+          "crop_et_mm": 293.98,
+          "gross_planning_proxy_m3": 3919.76
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower (oilseed)",
+          "family": "oilseed",
+          "season": "summer",
+          "slot": 2,
+          "season_year": 2027,
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-21",
+          "crop_et_mm": 818.76,
+          "gross_planning_proxy_m3": 10916.8
+        },
+        {
+          "id": "faba",
+          "name": "Faba bean (fresh harvest)",
+          "family": "legume",
+          "season": "winter",
+          "slot": 3,
+          "season_year": 2027,
+          "planting_date": "2027-11-10",
+          "harvest_estimated_date": "2028-02-17",
+          "crop_et_mm": 232.19,
+          "gross_planning_proxy_m3": 3095.88
+        },
+        {
+          "id": "maize",
+          "name": "Field maize (grain)",
+          "family": "cereal",
+          "season": "summer",
+          "slot": 4,
+          "season_year": 2028,
+          "planting_date": "2028-05-15",
+          "harvest_estimated_date": "2028-09-16",
+          "crop_et_mm": 844.72,
+          "gross_planning_proxy_m3": 11262.92
+        }
+      ],
+      "soil_screening": {
+        "winter": {
+          "crop_id": "wheat",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 1.5,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.55,
+          "total_available_water_taw_mm": 232.5,
+          "readily_available_water_raw_mm": 127.88,
+          "midseason_etc_reference_mm_day": 2.73,
+          "notional_buffer_days": 46.81,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 6.0,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "summer": {
+          "crop_id": "sunflower",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 0.8,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.45,
+          "total_available_water_taw_mm": 124.0,
+          "readily_available_water_raw_mm": 55.8,
+          "midseason_etc_reference_mm_day": 9.01,
+          "notional_buffer_days": 6.19,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": null,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "salinity_concern_count": 0,
+        "assessment_status": "provisional_crop_and_soil_screening"
+      },
+      "water_proxy_m3": 29195.36,
+      "budget_difference_m3": 804.64,
+      "within_total_budget": true,
+      "relative_water_score": 50.0,
+      "diversity_heuristic": 75.0,
+      "comparison_score": 61.2,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "Includes a legume; possible rotation benefit, NOT measured soil nitrogen gain.",
+        "1 adjacent crop-family repeat(s) including previous crop when known; consider pest history. This is a warning, not automatic disease prediction.",
+        "Historical 2025 seasonal analogue used for every year; no weather forecast or yield prediction."
+      ],
+      "rank": 9
+    },
+    {
+      "id": "wheat-maize-faba-sunflower",
+      "winter_crop": "wheat",
+      "summer_crop": "maize",
+      "sequence": [
+        "wheat",
+        "maize",
+        "faba",
+        "sunflower"
+      ],
+      "crops": [
+        {
+          "id": "wheat",
+          "name": "Winter wheat (grain)",
+          "family": "cereal",
+          "season": "winter",
+          "slot": 1,
+          "season_year": 2026,
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-03-09",
+          "crop_et_mm": 293.98,
+          "gross_planning_proxy_m3": 3919.76
+        },
+        {
+          "id": "maize",
+          "name": "Field maize (grain)",
+          "family": "cereal",
+          "season": "summer",
+          "slot": 2,
+          "season_year": 2027,
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-16",
+          "crop_et_mm": 844.72,
+          "gross_planning_proxy_m3": 11262.92
+        },
+        {
+          "id": "faba",
+          "name": "Faba bean (fresh harvest)",
+          "family": "legume",
+          "season": "winter",
+          "slot": 3,
+          "season_year": 2027,
+          "planting_date": "2027-11-10",
+          "harvest_estimated_date": "2028-02-17",
+          "crop_et_mm": 232.19,
+          "gross_planning_proxy_m3": 3095.88
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower (oilseed)",
+          "family": "oilseed",
+          "season": "summer",
+          "slot": 4,
+          "season_year": 2028,
+          "planting_date": "2028-05-15",
+          "harvest_estimated_date": "2028-09-21",
+          "crop_et_mm": 818.76,
+          "gross_planning_proxy_m3": 10916.8
+        }
+      ],
+      "soil_screening": {
+        "winter": {
+          "crop_id": "wheat",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 1.5,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.55,
+          "total_available_water_taw_mm": 232.5,
+          "readily_available_water_raw_mm": 127.88,
+          "midseason_etc_reference_mm_day": 2.73,
+          "notional_buffer_days": 46.81,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 6.0,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "summer": {
+          "crop_id": "maize",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 1.0,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.55,
+          "total_available_water_taw_mm": 155.0,
+          "readily_available_water_raw_mm": 85.25,
+          "midseason_etc_reference_mm_day": 9.94,
+          "notional_buffer_days": 8.58,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 1.7,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "salinity_concern_count": 0,
+        "assessment_status": "provisional_crop_and_soil_screening"
+      },
+      "water_proxy_m3": 29195.36,
+      "budget_difference_m3": 804.64,
+      "within_total_budget": true,
+      "relative_water_score": 50.0,
+      "diversity_heuristic": 50.0,
+      "comparison_score": 50.0,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "Includes a legume; possible rotation benefit, NOT measured soil nitrogen gain.",
+        "2 adjacent crop-family repeat(s) including previous crop when known; consider pest history. This is a warning, not automatic disease prediction.",
+        "Historical 2025 seasonal analogue used for every year; no weather forecast or yield prediction."
+      ],
+      "rank": 10
+    },
+    {
+      "id": "wheat-sunflower-wheat-sunflower",
+      "winter_crop": "wheat",
+      "summer_crop": "sunflower",
+      "sequence": [
+        "wheat",
+        "sunflower",
+        "wheat",
+        "sunflower"
+      ],
+      "crops": [
+        {
+          "id": "wheat",
+          "name": "Winter wheat (grain)",
+          "family": "cereal",
+          "season": "winter",
+          "slot": 1,
+          "season_year": 2026,
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-03-09",
+          "crop_et_mm": 293.98,
+          "gross_planning_proxy_m3": 3919.76
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower (oilseed)",
+          "family": "oilseed",
+          "season": "summer",
+          "slot": 2,
+          "season_year": 2027,
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-21",
+          "crop_et_mm": 818.76,
+          "gross_planning_proxy_m3": 10916.8
+        },
+        {
+          "id": "wheat",
+          "name": "Winter wheat (grain)",
+          "family": "cereal",
+          "season": "winter",
+          "slot": 3,
+          "season_year": 2027,
+          "planting_date": "2027-11-10",
+          "harvest_estimated_date": "2028-03-08",
+          "crop_et_mm": 293.85,
+          "gross_planning_proxy_m3": 3917.97
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower (oilseed)",
+          "family": "oilseed",
+          "season": "summer",
+          "slot": 4,
+          "season_year": 2028,
+          "planting_date": "2028-05-15",
+          "harvest_estimated_date": "2028-09-21",
+          "crop_et_mm": 818.76,
+          "gross_planning_proxy_m3": 10916.8
+        }
+      ],
+      "soil_screening": {
+        "winter": {
+          "crop_id": "wheat",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 1.5,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.55,
+          "total_available_water_taw_mm": 232.5,
+          "readily_available_water_raw_mm": 127.88,
+          "midseason_etc_reference_mm_day": 2.73,
+          "notional_buffer_days": 46.81,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 6.0,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "summer": {
+          "crop_id": "sunflower",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 0.8,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.45,
+          "total_available_water_taw_mm": 124.0,
+          "readily_available_water_raw_mm": 55.8,
+          "midseason_etc_reference_mm_day": 9.01,
+          "notional_buffer_days": 6.19,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": null,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "salinity_concern_count": 0,
+        "assessment_status": "provisional_crop_and_soil_screening"
+      },
+      "water_proxy_m3": 29671.33,
+      "budget_difference_m3": 328.67,
+      "within_total_budget": true,
+      "relative_water_score": 29.6,
+      "diversity_heuristic": 75.0,
+      "comparison_score": 50.0,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "1 adjacent crop-family repeat(s) including previous crop when known; consider pest history. This is a warning, not automatic disease prediction.",
+        "Historical 2025 seasonal analogue used for every year; no weather forecast or yield prediction."
+      ],
+      "rank": 11
+    },
+    {
+      "id": "faba-maize-wheat-maize",
+      "winter_crop": "faba",
+      "summer_crop": "maize",
+      "sequence": [
+        "faba",
+        "maize",
+        "wheat",
+        "maize"
+      ],
+      "crops": [
+        {
+          "id": "faba",
+          "name": "Faba bean (fresh harvest)",
+          "family": "legume",
+          "season": "winter",
+          "slot": 1,
+          "season_year": 2026,
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-02-17",
+          "crop_et_mm": 232.19,
+          "gross_planning_proxy_m3": 3095.88
+        },
+        {
+          "id": "maize",
+          "name": "Field maize (grain)",
+          "family": "cereal",
+          "season": "summer",
+          "slot": 2,
+          "season_year": 2027,
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-16",
+          "crop_et_mm": 844.72,
+          "gross_planning_proxy_m3": 11262.92
+        },
+        {
+          "id": "wheat",
+          "name": "Winter wheat (grain)",
+          "family": "cereal",
+          "season": "winter",
+          "slot": 3,
+          "season_year": 2027,
+          "planting_date": "2027-11-10",
+          "harvest_estimated_date": "2028-03-08",
+          "crop_et_mm": 293.85,
+          "gross_planning_proxy_m3": 3917.97
+        },
+        {
+          "id": "maize",
+          "name": "Field maize (grain)",
+          "family": "cereal",
+          "season": "summer",
+          "slot": 4,
+          "season_year": 2028,
+          "planting_date": "2028-05-15",
+          "harvest_estimated_date": "2028-09-16",
+          "crop_et_mm": 844.72,
+          "gross_planning_proxy_m3": 11262.92
+        }
+      ],
+      "soil_screening": {
+        "winter": {
+          "crop_id": "faba",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 0.5,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.45,
+          "total_available_water_taw_mm": 77.5,
+          "readily_available_water_raw_mm": 34.88,
+          "midseason_etc_reference_mm_day": 2.63,
+          "notional_buffer_days": 13.27,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 1.6,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "summer": {
+          "crop_id": "maize",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 1.0,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.55,
+          "total_available_water_taw_mm": 155.0,
+          "readily_available_water_raw_mm": 85.25,
+          "midseason_etc_reference_mm_day": 9.94,
+          "notional_buffer_days": 8.58,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 1.7,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "salinity_concern_count": 0,
+        "assessment_status": "provisional_crop_and_soil_screening"
+      },
+      "water_proxy_m3": 29539.69,
+      "budget_difference_m3": 460.31,
+      "within_total_budget": true,
+      "relative_water_score": 35.2,
+      "diversity_heuristic": 50.0,
+      "comparison_score": 41.9,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "Includes a legume; possible rotation benefit, NOT measured soil nitrogen gain.",
+        "2 adjacent crop-family repeat(s) including previous crop when known; consider pest history. This is a warning, not automatic disease prediction.",
+        "Historical 2025 seasonal analogue used for every year; no weather forecast or yield prediction."
+      ],
+      "rank": 12
+    },
+    {
+      "id": "wheat-maize-faba-maize",
+      "winter_crop": "wheat",
+      "summer_crop": "maize",
+      "sequence": [
+        "wheat",
+        "maize",
+        "faba",
+        "maize"
+      ],
+      "crops": [
+        {
+          "id": "wheat",
+          "name": "Winter wheat (grain)",
+          "family": "cereal",
+          "season": "winter",
+          "slot": 1,
+          "season_year": 2026,
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-03-09",
+          "crop_et_mm": 293.98,
+          "gross_planning_proxy_m3": 3919.76
+        },
+        {
+          "id": "maize",
+          "name": "Field maize (grain)",
+          "family": "cereal",
+          "season": "summer",
+          "slot": 2,
+          "season_year": 2027,
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-16",
+          "crop_et_mm": 844.72,
+          "gross_planning_proxy_m3": 11262.92
+        },
+        {
+          "id": "faba",
+          "name": "Faba bean (fresh harvest)",
+          "family": "legume",
+          "season": "winter",
+          "slot": 3,
+          "season_year": 2027,
+          "planting_date": "2027-11-10",
+          "harvest_estimated_date": "2028-02-17",
+          "crop_et_mm": 232.19,
+          "gross_planning_proxy_m3": 3095.88
+        },
+        {
+          "id": "maize",
+          "name": "Field maize (grain)",
+          "family": "cereal",
+          "season": "summer",
+          "slot": 4,
+          "season_year": 2028,
+          "planting_date": "2028-05-15",
+          "harvest_estimated_date": "2028-09-16",
+          "crop_et_mm": 844.72,
+          "gross_planning_proxy_m3": 11262.92
+        }
+      ],
+      "soil_screening": {
+        "winter": {
+          "crop_id": "wheat",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 1.5,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.55,
+          "total_available_water_taw_mm": 232.5,
+          "readily_available_water_raw_mm": 127.88,
+          "midseason_etc_reference_mm_day": 2.73,
+          "notional_buffer_days": 46.81,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 6.0,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "summer": {
+          "crop_id": "maize",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 1.0,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.55,
+          "total_available_water_taw_mm": 155.0,
+          "readily_available_water_raw_mm": 85.25,
+          "midseason_etc_reference_mm_day": 9.94,
+          "notional_buffer_days": 8.58,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 1.7,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "salinity_concern_count": 0,
+        "assessment_status": "provisional_crop_and_soil_screening"
+      },
+      "water_proxy_m3": 29541.48,
+      "budget_difference_m3": 458.52,
+      "within_total_budget": true,
+      "relative_water_score": 35.2,
+      "diversity_heuristic": 50.0,
+      "comparison_score": 41.9,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "Includes a legume; possible rotation benefit, NOT measured soil nitrogen gain.",
+        "2 adjacent crop-family repeat(s) including previous crop when known; consider pest history. This is a warning, not automatic disease prediction.",
+        "Historical 2025 seasonal analogue used for every year; no weather forecast or yield prediction."
+      ],
+      "rank": 13
+    },
+    {
+      "id": "wheat-sunflower-wheat-maize",
+      "winter_crop": "wheat",
+      "summer_crop": "sunflower",
+      "sequence": [
+        "wheat",
+        "sunflower",
+        "wheat",
+        "maize"
+      ],
+      "crops": [
+        {
+          "id": "wheat",
+          "name": "Winter wheat (grain)",
+          "family": "cereal",
+          "season": "winter",
+          "slot": 1,
+          "season_year": 2026,
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-03-09",
+          "crop_et_mm": 293.98,
+          "gross_planning_proxy_m3": 3919.76
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower (oilseed)",
+          "family": "oilseed",
+          "season": "summer",
+          "slot": 2,
+          "season_year": 2027,
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-21",
+          "crop_et_mm": 818.76,
+          "gross_planning_proxy_m3": 10916.8
+        },
+        {
+          "id": "wheat",
+          "name": "Winter wheat (grain)",
+          "family": "cereal",
+          "season": "winter",
+          "slot": 3,
+          "season_year": 2027,
+          "planting_date": "2027-11-10",
+          "harvest_estimated_date": "2028-03-08",
+          "crop_et_mm": 293.85,
+          "gross_planning_proxy_m3": 3917.97
+        },
+        {
+          "id": "maize",
+          "name": "Field maize (grain)",
+          "family": "cereal",
+          "season": "summer",
+          "slot": 4,
+          "season_year": 2028,
+          "planting_date": "2028-05-15",
+          "harvest_estimated_date": "2028-09-16",
+          "crop_et_mm": 844.72,
+          "gross_planning_proxy_m3": 11262.92
+        }
+      ],
+      "soil_screening": {
+        "winter": {
+          "crop_id": "wheat",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 1.5,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.55,
+          "total_available_water_taw_mm": 232.5,
+          "readily_available_water_raw_mm": 127.88,
+          "midseason_etc_reference_mm_day": 2.73,
+          "notional_buffer_days": 46.81,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 6.0,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "summer": {
+          "crop_id": "sunflower",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 0.8,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.45,
+          "total_available_water_taw_mm": 124.0,
+          "readily_available_water_raw_mm": 55.8,
+          "midseason_etc_reference_mm_day": 9.01,
+          "notional_buffer_days": 6.19,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": null,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "salinity_concern_count": 0,
+        "assessment_status": "provisional_crop_and_soil_screening"
+      },
+      "water_proxy_m3": 30017.45,
+      "budget_difference_m3": -17.45,
+      "within_total_budget": false,
+      "relative_water_score": 14.8,
+      "diversity_heuristic": 50.0,
+      "comparison_score": 30.6,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "2 adjacent crop-family repeat(s) including previous crop when known; consider pest history. This is a warning, not automatic disease prediction.",
+        "Historical 2025 seasonal analogue used for every year; no weather forecast or yield prediction."
+      ],
+      "rank": 14
+    },
+    {
+      "id": "wheat-maize-wheat-sunflower",
+      "winter_crop": "wheat",
+      "summer_crop": "maize",
+      "sequence": [
+        "wheat",
+        "maize",
+        "wheat",
+        "sunflower"
+      ],
+      "crops": [
+        {
+          "id": "wheat",
+          "name": "Winter wheat (grain)",
+          "family": "cereal",
+          "season": "winter",
+          "slot": 1,
+          "season_year": 2026,
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-03-09",
+          "crop_et_mm": 293.98,
+          "gross_planning_proxy_m3": 3919.76
+        },
+        {
+          "id": "maize",
+          "name": "Field maize (grain)",
+          "family": "cereal",
+          "season": "summer",
+          "slot": 2,
+          "season_year": 2027,
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-16",
+          "crop_et_mm": 844.72,
+          "gross_planning_proxy_m3": 11262.92
+        },
+        {
+          "id": "wheat",
+          "name": "Winter wheat (grain)",
+          "family": "cereal",
+          "season": "winter",
+          "slot": 3,
+          "season_year": 2027,
+          "planting_date": "2027-11-10",
+          "harvest_estimated_date": "2028-03-08",
+          "crop_et_mm": 293.85,
+          "gross_planning_proxy_m3": 3917.97
+        },
+        {
+          "id": "sunflower",
+          "name": "Sunflower (oilseed)",
+          "family": "oilseed",
+          "season": "summer",
+          "slot": 4,
+          "season_year": 2028,
+          "planting_date": "2028-05-15",
+          "harvest_estimated_date": "2028-09-21",
+          "crop_et_mm": 818.76,
+          "gross_planning_proxy_m3": 10916.8
+        }
+      ],
+      "soil_screening": {
+        "winter": {
+          "crop_id": "wheat",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 1.5,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.55,
+          "total_available_water_taw_mm": 232.5,
+          "readily_available_water_raw_mm": 127.88,
+          "midseason_etc_reference_mm_day": 2.73,
+          "notional_buffer_days": 46.81,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 6.0,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "summer": {
+          "crop_id": "maize",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 1.0,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.55,
+          "total_available_water_taw_mm": 155.0,
+          "readily_available_water_raw_mm": 85.25,
+          "midseason_etc_reference_mm_day": 9.94,
+          "notional_buffer_days": 8.58,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 1.7,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "salinity_concern_count": 0,
+        "assessment_status": "provisional_crop_and_soil_screening"
+      },
+      "water_proxy_m3": 30017.45,
+      "budget_difference_m3": -17.45,
+      "within_total_budget": false,
+      "relative_water_score": 14.8,
+      "diversity_heuristic": 25.0,
+      "comparison_score": 19.4,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "3 adjacent crop-family repeat(s) including previous crop when known; consider pest history. This is a warning, not automatic disease prediction.",
+        "Historical 2025 seasonal analogue used for every year; no weather forecast or yield prediction."
+      ],
+      "rank": 15
+    },
+    {
+      "id": "wheat-maize-wheat-maize",
+      "winter_crop": "wheat",
+      "summer_crop": "maize",
+      "sequence": [
+        "wheat",
+        "maize",
+        "wheat",
+        "maize"
+      ],
+      "crops": [
+        {
+          "id": "wheat",
+          "name": "Winter wheat (grain)",
+          "family": "cereal",
+          "season": "winter",
+          "slot": 1,
+          "season_year": 2026,
+          "planting_date": "2026-11-10",
+          "harvest_estimated_date": "2027-03-09",
+          "crop_et_mm": 293.98,
+          "gross_planning_proxy_m3": 3919.76
+        },
+        {
+          "id": "maize",
+          "name": "Field maize (grain)",
+          "family": "cereal",
+          "season": "summer",
+          "slot": 2,
+          "season_year": 2027,
+          "planting_date": "2027-05-15",
+          "harvest_estimated_date": "2027-09-16",
+          "crop_et_mm": 844.72,
+          "gross_planning_proxy_m3": 11262.92
+        },
+        {
+          "id": "wheat",
+          "name": "Winter wheat (grain)",
+          "family": "cereal",
+          "season": "winter",
+          "slot": 3,
+          "season_year": 2027,
+          "planting_date": "2027-11-10",
+          "harvest_estimated_date": "2028-03-08",
+          "crop_et_mm": 293.85,
+          "gross_planning_proxy_m3": 3917.97
+        },
+        {
+          "id": "maize",
+          "name": "Field maize (grain)",
+          "family": "cereal",
+          "season": "summer",
+          "slot": 4,
+          "season_year": 2028,
+          "planting_date": "2028-05-15",
+          "harvest_estimated_date": "2028-09-16",
+          "crop_et_mm": 844.72,
+          "gross_planning_proxy_m3": 11262.92
+        }
+      ],
+      "soil_screening": {
+        "winter": {
+          "crop_id": "wheat",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 1.5,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.55,
+          "total_available_water_taw_mm": 232.5,
+          "readily_available_water_raw_mm": 127.88,
+          "midseason_etc_reference_mm_day": 2.73,
+          "notional_buffer_days": 46.81,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 6.0,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "summer": {
+          "crop_id": "maize",
+          "awc_mm_per_m": 155.0,
+          "awc_source": "fao56_texture_midpoint_assumption",
+          "root_depth_m": 1.0,
+          "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+          "depletion_fraction_p": 0.55,
+          "total_available_water_taw_mm": 155.0,
+          "readily_available_water_raw_mm": 85.25,
+          "midseason_etc_reference_mm_day": 9.94,
+          "notional_buffer_days": 8.58,
+          "soil_ece_ds_m": null,
+          "fao56_ece_threshold_ds_m": 1.7,
+          "salinity_flag": "not_tested",
+          "notes": [
+            "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+            "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+            "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+            "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+          ]
+        },
+        "salinity_concern_count": 0,
+        "assessment_status": "provisional_crop_and_soil_screening"
+      },
+      "water_proxy_m3": 30363.57,
+      "budget_difference_m3": -363.57,
+      "within_total_budget": false,
+      "relative_water_score": 0.0,
+      "diversity_heuristic": 0.0,
+      "comparison_score": 0.0,
+      "comparison_weights": {
+        "water": 0.55,
+        "diversity": 0.45
+      },
+      "signals": [
+        "4 adjacent crop-family repeat(s) including previous crop when known; consider pest history. This is a warning, not automatic disease prediction.",
+        "Historical 2025 seasonal analogue used for every year; no weather forecast or yield prediction."
+      ],
+      "rank": 16
+    }
+  ],
+  "rotation_generation": {
+    "planning_seasons": 4,
+    "season_slots": [
+      {
+        "slot": 1,
+        "season": "winter",
+        "year": 2026,
+        "anchor_year": 2026
+      },
+      {
+        "slot": 2,
+        "season": "summer",
+        "year": 2027,
+        "anchor_year": 2026
+      },
+      {
+        "slot": 3,
+        "season": "winter",
+        "year": 2027,
+        "anchor_year": 2027
+      },
+      {
+        "slot": 4,
+        "season": "summer",
+        "year": 2028,
+        "anchor_year": 2027
+      }
+    ],
+    "crop_pool": {
+      "winter": [
+        "wheat",
+        "faba"
+      ],
+      "summer": [
+        "maize",
+        "sunflower"
+      ]
+    },
+    "generated_before_rules": 16,
+    "excluded_by_family_rule": 0,
+    "valid_candidate_count": 16,
+    "within_total_budget_count": 13,
+    "returned_plan_count": 16,
+    "results_truncated": false,
+    "family_rule": "strict if requested; otherwise advisory",
+    "water_budget_scope": "total_across_all_planning_seasons"
+  },
+  "soil_summary": {
+    "soil_type": "loam",
+    "awc": {
+      "value_mm_per_m": 155.0,
+      "source_kind": "fao56_texture_midpoint_assumption",
+      "reference": "FAO-56 Table 19 (range midpoint)",
+      "typical_range_mm_per_m": [
+        130.0,
+        180.0
+      ]
+    },
+    "ece_ds_m": null,
+    "crop_screening": {
+      "wheat": {
+        "crop_id": "wheat",
+        "awc_mm_per_m": 155.0,
+        "awc_source": "fao56_texture_midpoint_assumption",
+        "root_depth_m": 1.5,
+        "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+        "depletion_fraction_p": 0.55,
+        "total_available_water_taw_mm": 232.5,
+        "readily_available_water_raw_mm": 127.88,
+        "midseason_etc_reference_mm_day": 2.73,
+        "notional_buffer_days": 46.81,
+        "soil_ece_ds_m": null,
+        "fao56_ece_threshold_ds_m": 6.0,
+        "salinity_flag": "not_tested",
+        "notes": [
+          "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+          "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+          "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+          "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+        ]
+      },
+      "faba": {
+        "crop_id": "faba",
+        "awc_mm_per_m": 155.0,
+        "awc_source": "fao56_texture_midpoint_assumption",
+        "root_depth_m": 0.5,
+        "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+        "depletion_fraction_p": 0.45,
+        "total_available_water_taw_mm": 77.5,
+        "readily_available_water_raw_mm": 34.88,
+        "midseason_etc_reference_mm_day": 2.63,
+        "notional_buffer_days": 13.27,
+        "soil_ece_ds_m": null,
+        "fao56_ece_threshold_ds_m": 1.6,
+        "salinity_flag": "not_tested",
+        "notes": [
+          "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+          "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+          "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+          "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+        ]
+      },
+      "maize": {
+        "crop_id": "maize",
+        "awc_mm_per_m": 155.0,
+        "awc_source": "fao56_texture_midpoint_assumption",
+        "root_depth_m": 1.0,
+        "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+        "depletion_fraction_p": 0.55,
+        "total_available_water_taw_mm": 155.0,
+        "readily_available_water_raw_mm": 85.25,
+        "midseason_etc_reference_mm_day": 9.94,
+        "notional_buffer_days": 8.58,
+        "soil_ece_ds_m": null,
+        "fao56_ece_threshold_ds_m": 1.7,
+        "salinity_flag": "not_tested",
+        "notes": [
+          "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+          "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+          "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+          "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+        ]
+      },
+      "sunflower": {
+        "crop_id": "sunflower",
+        "awc_mm_per_m": 155.0,
+        "awc_source": "fao56_texture_midpoint_assumption",
+        "root_depth_m": 0.8,
+        "root_depth_source": "FAO-56 Table 22 lower bound; mature-crop approximation",
+        "depletion_fraction_p": 0.45,
+        "total_available_water_taw_mm": 124.0,
+        "readily_available_water_raw_mm": 55.8,
+        "midseason_etc_reference_mm_day": 9.01,
+        "notional_buffer_days": 6.19,
+        "soil_ece_ds_m": null,
+        "fao56_ece_threshold_ds_m": null,
+        "salinity_flag": "not_tested",
+        "notes": [
+          "TAW and RAW are indicative root-zone storage capacity, NOT current soil moisture.",
+          "Buffer days assume full field capacity, no irrigation/rain, constant midseason ETc and mature roots; not an irrigation schedule.",
+          "Texture/default values and root-depth assumptions must be locally validated; ECe must be saturated-paste extract EC.",
+          "A crop below its published ECe threshold is not proven suitable; other field risks remain."
+        ]
+      }
+    },
+    "source_links": {
+      "fao56_soil": "https://www.fao.org/4/X0490E/x0490e0c.htm",
+      "fao56_roots_and_salinity": "https://www.fao.org/4/X0490E/x0490e0e.htm"
+    }
+  },
+  "method": {
+    "crop_water": "ETc=Kc*ET0 (FAO-56)",
+    "gross_water": "gross planning proxy = ETc/assumed efficiency (no rainfall credit)",
+    "relative_score": "0-100 comparative weighted water and family-diversity heuristic; NOT probability or validated suitability",
+    "rotation_search": "Enumerate all alternating winter/summer sequences from selected crops, optional adjacent-family pruning, then rank and return a capped shortlist",
+    "soil_water": "FAO-56 TAW=AWC*root_depth, RAW=p*TAW; storage/indicative dry-down only",
+    "soil_salinity": "FAO-56 Table 23 ECe thresholds only where published; never a yield prediction",
+    "reference_year": 2025,
+    "future_crop_years": [
+      2026,
+      2027,
+      2028
+    ],
+    "crop_windows": {
+      "winter": "Nov 10, 2026 (illustrative)",
+      "summer": "May 15, 2027 (illustrative)"
+    },
+    "crop_sources": {
+      "kc": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+      "rotation": "https://www.fao.org/conservation-agriculture/in-practice/species-diversification/en/",
+      "egypt_calendar": "https://barp.org.in/node/2978"
+    }
+  },
+  "limitations": [
+    "Screening prototype only; not a planting, irrigation, fertilizer, or yield recommendation.",
+    "All proposed future crop windows reuse 2025 NASA seasonal observations as a historical analogue; NOT forecasts or a multi-year climatology.",
+    "FAO-56 Kc and stage durations are published regional examples; values, crop calendar and growing season need local agronomist calibration.",
+    "Gross water proxy = sum(Kc*ET0)*area/irrigation-efficiency, with no effective-rainfall credit, soil water balance, salinity, or irrigation scheduling.",
+    "Water budget is the total for ALL chosen seasons; per-season water constraints and daily supplies have not been modeled.",
+    "Soil texture informs indicative FAO-56 TAW and RAW only; not an observed soil moisture or validated suitability score.",
+    "Optional farmer-supplied AWC and saturation-extract soil ECe produce field-specific screening flags; measurements were not independently verified.",
+    "Salinity comparisons use FAO-56 Table 23 thresholds where available; unknown thresholds are never treated as safe, and no yield-loss numbers are predicted.",
+    "Salinity-concern count is a conservative ranking tie-break before water/diversity scores when ECe is supplied; not a clinical-grade or agronomist-approved ranking.",
+    "Diversity score is an explicit family-change heuristic; strict family-change screening is optional and may exclude legitimate local rotations. No measured soil-health or yield claims.",
+    "NASA POWER spatial grids are not on-farm sensors. On-demand locations use live 2025 NASA POWER records or the exact-coordinate cached response.",
+    "No ML model trained, validated or used. SMAP, HLS and GAEZ are not yet integrated."
+  ]
+}

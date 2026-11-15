@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+# Bundled real 2025 data and validated output retained intentionally for reproducibility.
+outputs/location_cache/
+
+.env
+.env.*
+!.env.example
+__pycache__/
+.pytest_cache/
+.deps_ok

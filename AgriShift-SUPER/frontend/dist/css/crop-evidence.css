@@ -1,0 +1,32 @@
+/* Self-contained, responsive scientific extension; respects the editorial frontend palette. */
+.agri-assessment-shell{margin:clamp(32px,5vw,80px) auto;padding:clamp(24px,4vw,54px);width:min(100%,1260px);border-radius:30px;background:linear-gradient(150deg,#f4f1e7,#eff3e8);color:#132b28;border:1px solid #cbd6c8;box-sizing:border-box}
+.agri-assessment-shell *{box-sizing:border-box}
+.agri-assessment-head{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:18px}
+.agri-assessment-head h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(30px,4vw,55px);line-height:1.08;font-weight:500;letter-spacing:-.035em;margin:12px 0}
+.agri-assessment-head p{max-width:690px;line-height:1.65}
+.agri-assessment-head button{flex:none;min-height:48px}
+.agri-assessment-status{padding:12px 15px;margin:10px 0 22px;border-radius:12px;background:#e1e9d9;font-size:13px;line-height:1.6}
+.agri-assessment-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.agri-assess-card{padding:22px;background:#fffdf8;border:1px solid #dce3d9;border-radius:20px;min-width:0;box-shadow:0 8px 25px rgba(9,36,24,.04)}
+.agri-assess-card.agri-assess-caution{border-color:#c5a37b}
+.agri-assess-top{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:flex-start}
+.agri-assess-name{font-family:Georgia,serif;font-size:20px;color:#18392e;max-width:100%;overflow-wrap:anywhere}
+.agri-assess-pill{font-size:9px;font-weight:800;letter-spacing:.07em;border:1px solid #cbd6c8;padding:6px 8px;border-radius:50px}
+.agri-assess-etc{display:flex;align-items:baseline;flex-wrap:wrap;gap:9px;margin:16px 0;color:#1a4c36}
+.agri-assess-etc strong{font-family:Georgia,serif;font-size:clamp(28px,3vw,38px);font-weight:500;font-variant-numeric:tabular-nums}
+.agri-assess-etc span{font-size:12px;color:#42594b}
+.agri-assess-lines{display:grid;gap:8px}
+.agri-assess-line{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;border-bottom:1px solid #e6ece5;padding:6px 0;font-size:12px;line-height:1.5}
+.agri-assess-line span{color:#61766b}
+.agri-assess-line strong{text-align:right;max-width:62%;font-weight:600;color:#244739;overflow-wrap:anywhere}
+.agri-assess-details{margin-top:16px;font-size:12px;color:#405b4f}
+.agri-assess-details summary{cursor:pointer;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.agri-assess-details li{padding:3px 0;overflow-wrap:anywhere}
+.agri-assessment-disclaimer{margin:22px 0 0;font-size:12px;line-height:1.7;color:#476454}
+@media(max-width:950px){.agri-assessment-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.agri-assessment-shell{border-radius:20px;padding:20px 16px}.agri-assessment-head{align-items:stretch;flex-direction:column}.agri-assessment-grid{grid-template-columns:1fr}.agri-assessment-head button{width:100%}}
+
+.agri-assessment-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:flex-end}
+.agri-assessment-actions button{font-size:13px;min-height:46px}
+.agri-assessment-actions button:disabled{opacity:.48;cursor:not-allowed}
+@media(max-width:640px){.agri-assessment-actions{flex-direction:column;align-items:stretch}.agri-assessment-actions button{width:100%}}

@@ -1,0 +1,482 @@
+{
+  "wheat": {
+    "species": "Triticum aestivum",
+    "source_row_id": "2114",
+    "source_url": "https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv",
+    "source_dataset": "User supplied EcoCrop_DB.csv, OpenCLIM mirror of historical FAO ECOCROP",
+    "temperature_c": [
+      5.0,
+      27.0
+    ],
+    "temperature_optimal_c": [
+      15.0,
+      23.0
+    ],
+    "soil_ph": [
+      5.5,
+      8.5
+    ],
+    "soil_ph_optimal": [
+      6.0,
+      7.0
+    ],
+    "annual_rainfall_mm": [
+      300.0,
+      1600.0
+    ],
+    "annual_rainfall_optimal_mm": [
+      750.0,
+      900.0
+    ],
+    "growth_days_range": [
+      90.0,
+      250.0
+    ],
+    "soil_texture_optimal": "medium, organic",
+    "soil_texture_absolute": "heavy, medium",
+    "soil_drainage_optimal": "well (dry spells)",
+    "soil_drainage_absolute": "well (dry spells)",
+    "source_note": "Historical species envelope, NOT a global on-farm suitability probability. Requires cultivar, site soil measurements, management and calendar validation.",
+    "taxon_note": "Species-level ecological envelope, not cultivar-specific."
+  },
+  "faba": {
+    "species": "Vicia faba",
+    "source_row_id": "2146",
+    "source_url": "https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv",
+    "source_dataset": "User supplied EcoCrop_DB.csv, OpenCLIM mirror of historical FAO ECOCROP",
+    "temperature_c": [
+      5.0,
+      32.0
+    ],
+    "temperature_optimal_c": [
+      18.0,
+      28.0
+    ],
+    "soil_ph": [
+      4.5,
+      8.6
+    ],
+    "soil_ph_optimal": [
+      6.0,
+      7.0
+    ],
+    "annual_rainfall_mm": [
+      250.0,
+      2600.0
+    ],
+    "annual_rainfall_optimal_mm": [
+      650.0,
+      1000.0
+    ],
+    "growth_days_range": [
+      100.0,
+      150.0
+    ],
+    "soil_texture_optimal": "medium, organic",
+    "soil_texture_absolute": "heavy, medium, light",
+    "soil_drainage_optimal": "well (dry spells)",
+    "soil_drainage_absolute": "well (dry spells)",
+    "source_note": "Historical species envelope, NOT a global on-farm suitability probability. Requires cultivar, site soil measurements, management and calendar validation.",
+    "taxon_note": "Species-level ecological envelope, not cultivar-specific."
+  },
+  "maize": {
+    "species": "Zea mays",
+    "source_row_id": "2175",
+    "source_url": "https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv",
+    "source_dataset": "User supplied EcoCrop_DB.csv, OpenCLIM mirror of historical FAO ECOCROP",
+    "temperature_c": [
+      10.0,
+      47.0
+    ],
+    "temperature_optimal_c": [
+      18.0,
+      33.0
+    ],
+    "soil_ph": [
+      4.5,
+      8.5
+    ],
+    "soil_ph_optimal": [
+      5.0,
+      7.0
+    ],
+    "annual_rainfall_mm": [
+      400.0,
+      1800.0
+    ],
+    "annual_rainfall_optimal_mm": [
+      600.0,
+      1200.0
+    ],
+    "growth_days_range": [
+      65.0,
+      365.0
+    ],
+    "soil_texture_optimal": null,
+    "soil_texture_absolute": null,
+    "soil_drainage_optimal": null,
+    "soil_drainage_absolute": null,
+    "source_note": "Historical species envelope, NOT a global on-farm suitability probability. Requires cultivar, site soil measurements, management and calendar validation.",
+    "taxon_note": "Species-level ecological envelope, not cultivar-specific."
+  },
+  "sunflower": {
+    "species": "Helianthus annuus",
+    "source_row_id": "1191",
+    "source_url": "https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv",
+    "source_dataset": "User supplied EcoCrop_DB.csv, OpenCLIM mirror of historical FAO ECOCROP",
+    "temperature_c": [
+      5.0,
+      45.0
+    ],
+    "temperature_optimal_c": [
+      17.0,
+      34.0
+    ],
+    "soil_ph": [
+      5.5,
+      8.0
+    ],
+    "soil_ph_optimal": [
+      6.0,
+      7.5
+    ],
+    "annual_rainfall_mm": [
+      300.0,
+      1600.0
+    ],
+    "annual_rainfall_optimal_mm": [
+      600.0,
+      1000.0
+    ],
+    "growth_days_range": [
+      70.0,
+      200.0
+    ],
+    "soil_texture_optimal": "medium, light",
+    "soil_texture_absolute": "heavy, medium, light",
+    "soil_drainage_optimal": "well (dry spells)",
+    "soil_drainage_absolute": "well (dry spells)",
+    "source_note": "Historical species envelope, NOT a global on-farm suitability probability. Requires cultivar, site soil measurements, management and calendar validation.",
+    "taxon_note": "Species-level ecological envelope, not cultivar-specific."
+  },
+  "rice": {
+    "species": "Oryza sativa",
+    "source_row_id": "1574",
+    "source_url": "https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv",
+    "source_dataset": "User supplied EcoCrop_DB.csv, OpenCLIM mirror of historical FAO ECOCROP",
+    "temperature_c": [
+      10.0,
+      36.0
+    ],
+    "temperature_optimal_c": [
+      20.0,
+      30.0
+    ],
+    "soil_ph": [
+      4.5,
+      9.0
+    ],
+    "soil_ph_optimal": [
+      5.5,
+      7.0
+    ],
+    "annual_rainfall_mm": [
+      1000.0,
+      4000.0
+    ],
+    "annual_rainfall_optimal_mm": [
+      1500.0,
+      2000.0
+    ],
+    "growth_days_range": [
+      80.0,
+      180.0
+    ],
+    "soil_texture_optimal": "wide",
+    "soil_texture_absolute": "wide",
+    "soil_drainage_optimal": "poorly (saturated >50% of year)",
+    "soil_drainage_absolute": "poorly (saturated >50% of year)",
+    "source_note": "Historical species envelope, NOT a global on-farm suitability probability. Requires cultivar, site soil measurements, management and calendar validation.",
+    "taxon_note": "Species-level ecological envelope, not cultivar-specific."
+  },
+  "cotton": {
+    "species": "Gossypium barbadense",
+    "source_row_id": "1158",
+    "source_url": "https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv",
+    "source_dataset": "User supplied EcoCrop_DB.csv, OpenCLIM mirror of historical FAO ECOCROP",
+    "temperature_c": [
+      15.0,
+      38.0
+    ],
+    "temperature_optimal_c": [
+      22.0,
+      32.0
+    ],
+    "soil_ph": [
+      5.0,
+      8.5
+    ],
+    "soil_ph_optimal": [
+      5.2,
+      7.2
+    ],
+    "annual_rainfall_mm": [
+      500.0,
+      1500.0
+    ],
+    "annual_rainfall_optimal_mm": [
+      750.0,
+      1250.0
+    ],
+    "growth_days_range": [
+      180.0,
+      210.0
+    ],
+    "soil_texture_optimal": "medium, organic",
+    "soil_texture_absolute": "heavy, medium, light",
+    "soil_drainage_optimal": "well (dry spells)",
+    "soil_drainage_absolute": "well (dry spells)",
+    "source_note": "Historical species envelope, NOT a global on-farm suitability probability. Requires cultivar, site soil measurements, management and calendar validation.",
+    "taxon_note": "Gossypium barbadense only; not all Gossypium cotton species. Confirm cultivated species."
+  },
+  "potato": {
+    "species": "Solanum tuberosum",
+    "source_row_id": "1971",
+    "source_url": "https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv",
+    "source_dataset": "User supplied EcoCrop_DB.csv, OpenCLIM mirror of historical FAO ECOCROP",
+    "temperature_c": [
+      7.0,
+      30.0
+    ],
+    "temperature_optimal_c": [
+      15.0,
+      25.0
+    ],
+    "soil_ph": [
+      4.2,
+      8.5
+    ],
+    "soil_ph_optimal": [
+      5.0,
+      6.2
+    ],
+    "annual_rainfall_mm": [
+      250.0,
+      2000.0
+    ],
+    "annual_rainfall_optimal_mm": [
+      500.0,
+      800.0
+    ],
+    "growth_days_range": [
+      90.0,
+      160.0
+    ],
+    "soil_texture_optimal": "medium, organic",
+    "soil_texture_absolute": "heavy, medium, light",
+    "soil_drainage_optimal": "well (dry spells)",
+    "soil_drainage_absolute": "well (dry spells), excessive (dry/moderately dry)",
+    "source_note": "Historical species envelope, NOT a global on-farm suitability probability. Requires cultivar, site soil measurements, management and calendar validation.",
+    "taxon_note": "Species-level ecological envelope, not cultivar-specific."
+  },
+  "tomato": {
+    "species": "Lycopersicon esculentum",
+    "source_row_id": "1379",
+    "source_url": "https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv",
+    "source_dataset": "User supplied EcoCrop_DB.csv, OpenCLIM mirror of historical FAO ECOCROP",
+    "temperature_c": [
+      7.0,
+      35.0
+    ],
+    "temperature_optimal_c": [
+      20.0,
+      27.0
+    ],
+    "soil_ph": [
+      5.0,
+      7.5
+    ],
+    "soil_ph_optimal": [
+      5.5,
+      6.8
+    ],
+    "annual_rainfall_mm": [
+      400.0,
+      1800.0
+    ],
+    "annual_rainfall_optimal_mm": [
+      600.0,
+      1300.0
+    ],
+    "growth_days_range": [
+      70.0,
+      150.0
+    ],
+    "soil_texture_optimal": "medium, organic",
+    "soil_texture_absolute": "heavy, medium, light",
+    "soil_drainage_optimal": "well (dry spells)",
+    "soil_drainage_absolute": "well (dry spells)",
+    "source_note": "Historical species envelope, NOT a global on-farm suitability probability. Requires cultivar, site soil measurements, management and calendar validation.",
+    "taxon_note": "Source uses Lycopersicon esculentum, a synonym of Solanum lycopersicum."
+  },
+  "onion": {
+    "species": "Allium cepa",
+    "source_row_id": "364",
+    "source_url": "https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv",
+    "source_dataset": "User supplied EcoCrop_DB.csv, OpenCLIM mirror of historical FAO ECOCROP",
+    "temperature_c": [
+      4.0,
+      30.0
+    ],
+    "temperature_optimal_c": [
+      12.0,
+      25.0
+    ],
+    "soil_ph": [
+      4.3,
+      8.3
+    ],
+    "soil_ph_optimal": [
+      6.0,
+      7.0
+    ],
+    "annual_rainfall_mm": [
+      300.0,
+      2800.0
+    ],
+    "annual_rainfall_optimal_mm": [
+      350.0,
+      600.0
+    ],
+    "growth_days_range": [
+      85.0,
+      175.0
+    ],
+    "soil_texture_optimal": "medium, organic",
+    "soil_texture_absolute": "wide, organic",
+    "soil_drainage_optimal": "well (dry spells)",
+    "soil_drainage_absolute": "well (dry spells)",
+    "source_note": "Historical species envelope, NOT a global on-farm suitability probability. Requires cultivar, site soil measurements, management and calendar validation.",
+    "taxon_note": "Species-level ecological envelope, not cultivar-specific."
+  },
+  "sugarbeet": {
+    "species": "Beta vulgaris",
+    "source_row_id": "514",
+    "source_url": "https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv",
+    "source_dataset": "User supplied EcoCrop_DB.csv, OpenCLIM mirror of historical FAO ECOCROP",
+    "temperature_c": [
+      4.0,
+      35.0
+    ],
+    "temperature_optimal_c": [
+      15.0,
+      25.0
+    ],
+    "soil_ph": [
+      5.5,
+      7.5
+    ],
+    "soil_ph_optimal": [
+      6.0,
+      7.0
+    ],
+    "annual_rainfall_mm": [
+      500.0,
+      1000.0
+    ],
+    "annual_rainfall_optimal_mm": [
+      600.0,
+      800.0
+    ],
+    "growth_days_range": [
+      160.0,
+      240.0
+    ],
+    "soil_texture_optimal": "heavy, medium",
+    "soil_texture_absolute": "heavy, medium, light",
+    "soil_drainage_optimal": "well (dry spells)",
+    "soil_drainage_absolute": "well (dry spells)",
+    "source_note": "Historical species envelope, NOT a global on-farm suitability probability. Requires cultivar, site soil measurements, management and calendar validation.",
+    "taxon_note": "Beta vulgaris species, may cover non-sugar-beet types; verify cultivar-specific tolerances."
+  },
+  "alfalfa": {
+    "species": "Medicago sativa",
+    "source_row_id": "1428",
+    "source_url": "https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv",
+    "source_dataset": "User supplied EcoCrop_DB.csv, OpenCLIM mirror of historical FAO ECOCROP",
+    "temperature_c": [
+      5.0,
+      45.0
+    ],
+    "temperature_optimal_c": [
+      21.0,
+      27.0
+    ],
+    "soil_ph": [
+      4.3,
+      8.7
+    ],
+    "soil_ph_optimal": [
+      6.5,
+      7.5
+    ],
+    "annual_rainfall_mm": [
+      350.0,
+      2700.0
+    ],
+    "annual_rainfall_optimal_mm": [
+      600.0,
+      1200.0
+    ],
+    "growth_days_range": [
+      100.0,
+      210.0
+    ],
+    "soil_texture_optimal": "medium, light",
+    "soil_texture_absolute": "medium, light",
+    "soil_drainage_optimal": "well (dry spells)",
+    "soil_drainage_absolute": "well (dry spells), excessive (dry/moderately dry)",
+    "source_note": "Historical species envelope, NOT a global on-farm suitability probability. Requires cultivar, site soil measurements, management and calendar validation.",
+    "taxon_note": "Species-level ecological envelope, not cultivar-specific."
+  },
+  "sorghum": {
+    "species": "Sorghum bicolor",
+    "source_row_id": "48747",
+    "source_url": "https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv",
+    "source_dataset": "User supplied EcoCrop_DB.csv, OpenCLIM mirror of historical FAO ECOCROP",
+    "temperature_c": [
+      8.0,
+      40.0
+    ],
+    "temperature_optimal_c": [
+      22.0,
+      35.0
+    ],
+    "soil_ph": [
+      5.0,
+      8.0
+    ],
+    "soil_ph_optimal": [
+      5.5,
+      7.5
+    ],
+    "annual_rainfall_mm": [
+      300.0,
+      700.0
+    ],
+    "annual_rainfall_optimal_mm": [
+      400.0,
+      600.0
+    ],
+    "growth_days_range": [
+      90.0,
+      300.0
+    ],
+    "soil_texture_optimal": "heavy, medium",
+    "soil_texture_absolute": "wide",
+    "soil_drainage_optimal": "well (dry spells)",
+    "soil_drainage_absolute": "well (dry spells), excessive (dry/moderately dry)",
+    "source_note": "Historical species envelope, NOT a global on-farm suitability probability. Requires cultivar, site soil measurements, management and calendar validation.",
+    "taxon_note": "Species-level ecological envelope, not cultivar-specific."
+  }
+}

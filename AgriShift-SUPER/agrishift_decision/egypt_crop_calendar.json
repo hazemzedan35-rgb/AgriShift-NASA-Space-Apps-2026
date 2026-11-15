@@ -1,0 +1,4100 @@
+{
+ "source_url": "https://cropcalendar.apps.fao.org/",
+ "source_workbook": "Crop_Calendar_Data_All.xlsx",
+ "country": "Egypt",
+ "records": [
+  {
+   "crop_id": "rice",
+   "reported_crop": "Rice",
+   "country": "Egypt",
+   "zone": null,
+   "sowing_window": {
+    "start": {
+     "day": 25,
+     "month": 4
+    },
+    "end": {
+     "day": 15,
+     "month": 5
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 9
+    },
+    "end": {
+     "day": 31,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    120,
+    160
+   ],
+   "additional_information": "Kafer Elshiekh, Sharqiea, Daqahlia, Gharbia, Behiara, Rashid, Alexandria, Demiat",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 16,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "rice",
+   "reported_crop": "Rice",
+   "country": "Egypt",
+   "zone": null,
+   "sowing_window": {
+    "start": {
+     "day": 10,
+     "month": 5
+    },
+    "end": {
+     "day": 1,
+     "month": 6
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 9
+    },
+    "end": {
+     "day": 31,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    140
+   ],
+   "additional_information": "Kafer Elshiekh, Sharqiea, Daqahlia, Gharbia, Behiara, Rashid, Alexandria, Demiat",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 17,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "rice",
+   "reported_crop": "Rice",
+   "country": "Egypt",
+   "zone": "Middle Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 20,
+     "month": 4
+    },
+    "end": {
+     "day": 10,
+     "month": 5
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 8
+    },
+    "end": {
+     "day": 30,
+     "month": 9
+    }
+   },
+   "growing_days_range": [
+    120,
+    150
+   ],
+   "additional_information": "Fayoum",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 18,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sorghum",
+   "reported_crop": "Sorghum",
+   "country": "Egypt",
+   "zone": "Middle Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 10,
+     "month": 5
+    },
+    "end": {
+     "day": 1,
+     "month": 6
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 9
+    },
+    "end": {
+     "day": 1,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Giza, Fayoum and Beni Sweaf",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 19,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sorghum",
+   "reported_crop": "Sorghum",
+   "country": "Egypt",
+   "zone": "Upper Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 6
+    },
+    "end": {
+     "day": 25,
+     "month": 6
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 10
+    },
+    "end": {
+     "day": 1,
+     "month": 11
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Assuit, Qena and Sohag",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 20,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sorghum",
+   "reported_crop": "Sorghum",
+   "country": "Egypt",
+   "zone": "New Valley (Oasis)",
+   "sowing_window": {
+    "start": {
+     "day": 10,
+     "month": 5
+    },
+    "end": {
+     "day": 1,
+     "month": 6
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 9
+    },
+    "end": {
+     "day": 1,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "All Oases",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 21,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "wheat",
+   "reported_crop": "Wheat, bread",
+   "country": "Egypt",
+   "zone": "Delta region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 11
+    },
+    "end": {
+     "day": 30,
+     "month": 11
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 25,
+     "month": 4
+    },
+    "end": {
+     "day": 25,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    150,
+    190
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 22,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "wheat",
+   "reported_crop": "Wheat, bread",
+   "country": "Egypt",
+   "zone": "near by Delta region old reclaimed soils \"NDRORL\"",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 11
+    },
+    "end": {
+     "day": 30,
+     "month": 11
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 25,
+     "month": 4
+    },
+    "end": {
+     "day": 25,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    150,
+    190
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 23,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "wheat",
+   "reported_crop": "Wheat, bread",
+   "country": "Egypt",
+   "zone": "near by Delta region new reclaimed soils \"NDRNRL\"",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 11
+    },
+    "end": {
+     "day": 30,
+     "month": 11
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 25,
+     "month": 4
+    },
+    "end": {
+     "day": 25,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    150,
+    190
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 24,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "wheat",
+   "reported_crop": "Wheat, bread",
+   "country": "Egypt",
+   "zone": "North West Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 11
+    },
+    "end": {
+     "day": 30,
+     "month": 11
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 25,
+     "month": 4
+    },
+    "end": {
+     "day": 25,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    150,
+    190
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 25,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "wheat",
+   "reported_crop": "Wheat, bread",
+   "country": "Egypt",
+   "zone": "North Sinai Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 11
+    },
+    "end": {
+     "day": 30,
+     "month": 11
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 25,
+     "month": 4
+    },
+    "end": {
+     "day": 25,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    150,
+    190
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 26,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "wheat",
+   "reported_crop": "Wheat, bread",
+   "country": "Egypt",
+   "zone": "South Sinai Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 11
+    },
+    "end": {
+     "day": 30,
+     "month": 11
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 25,
+     "month": 4
+    },
+    "end": {
+     "day": 25,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    150,
+    190
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 27,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "wheat",
+   "reported_crop": "Wheat, bread",
+   "country": "Egypt",
+   "zone": "Middle Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 11
+    },
+    "end": {
+     "day": 30,
+     "month": 11
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 25,
+     "month": 4
+    },
+    "end": {
+     "day": 25,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    150,
+    190
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 28,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "wheat",
+   "reported_crop": "Wheat, bread",
+   "country": "Egypt",
+   "zone": "Middle Egypt new reclaimed land Region \"MENRL\"",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 11
+    },
+    "end": {
+     "day": 30,
+     "month": 11
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 25,
+     "month": 4
+    },
+    "end": {
+     "day": 25,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    150,
+    190
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 29,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "wheat",
+   "reported_crop": "Wheat, bread",
+   "country": "Egypt",
+   "zone": "Upper Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 11
+    },
+    "end": {
+     "day": 30,
+     "month": 11
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 25,
+     "month": 4
+    },
+    "end": {
+     "day": 25,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    150,
+    190
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 30,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "wheat",
+   "reported_crop": "Wheat, bread",
+   "country": "Egypt",
+   "zone": "Upper Egypt new reclaimed land Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 11
+    },
+    "end": {
+     "day": 30,
+     "month": 11
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 25,
+     "month": 4
+    },
+    "end": {
+     "day": 25,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    150,
+    190
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 31,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "wheat",
+   "reported_crop": "Wheat, bread",
+   "country": "Egypt",
+   "zone": "New Valley (Oasis)",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 11
+    },
+    "end": {
+     "day": 30,
+     "month": 11
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 25,
+     "month": 4
+    },
+    "end": {
+     "day": 25,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    150,
+    190
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 32,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "wheat",
+   "reported_crop": "Wheat, bread",
+   "country": "Egypt",
+   "zone": null,
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 11
+    },
+    "end": {
+     "day": 30,
+     "month": 11
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 25,
+     "month": 4
+    },
+    "end": {
+     "day": 25,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    150,
+    190
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 33,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "wheat",
+   "reported_crop": "Wheat, bread",
+   "country": "Egypt",
+   "zone": "Toska Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 11
+    },
+    "end": {
+     "day": 30,
+     "month": 11
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 25,
+     "month": 4
+    },
+    "end": {
+     "day": 25,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    150,
+    190
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 34,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "Delta region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 9
+    },
+    "end": {
+     "day": 15,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 12
+    },
+    "end": {
+     "day": 20,
+     "month": 1
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Autumn season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 46,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "near by Delta region old reclaimed soils \"NDRORL\"",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 9
+    },
+    "end": {
+     "day": 15,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 12
+    },
+    "end": {
+     "day": 20,
+     "month": 1
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Autumn season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 47,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "near by Delta region new reclaimed soils \"NDRNRL\"",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 9
+    },
+    "end": {
+     "day": 15,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 12
+    },
+    "end": {
+     "day": 20,
+     "month": 1
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Autumn season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 48,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "North West Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 9
+    },
+    "end": {
+     "day": 15,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 12
+    },
+    "end": {
+     "day": 20,
+     "month": 1
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Autumn season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 49,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "North Sinai Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 9
+    },
+    "end": {
+     "day": 15,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 12
+    },
+    "end": {
+     "day": 20,
+     "month": 1
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Autumn season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 50,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "South Sinai Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 9
+    },
+    "end": {
+     "day": 15,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 12
+    },
+    "end": {
+     "day": 20,
+     "month": 1
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Autumn season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 51,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "Middle Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 9
+    },
+    "end": {
+     "day": 15,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 12
+    },
+    "end": {
+     "day": 20,
+     "month": 1
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Autumn season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 52,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "Middle Egypt new reclaimed land Region \"MENRL\"",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 9
+    },
+    "end": {
+     "day": 15,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 12
+    },
+    "end": {
+     "day": 20,
+     "month": 1
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Autumn season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 53,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "Upper Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 9
+    },
+    "end": {
+     "day": 15,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 12
+    },
+    "end": {
+     "day": 20,
+     "month": 1
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Autumn season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 54,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "Upper Egypt new reclaimed land Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 9
+    },
+    "end": {
+     "day": 15,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 12
+    },
+    "end": {
+     "day": 20,
+     "month": 1
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Autumn season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 55,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "New Valley (Oasis)",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 9
+    },
+    "end": {
+     "day": 15,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 12
+    },
+    "end": {
+     "day": 20,
+     "month": 1
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Autumn season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 56,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": null,
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 9
+    },
+    "end": {
+     "day": 15,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 12
+    },
+    "end": {
+     "day": 20,
+     "month": 1
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Autumn season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 57,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "Toska Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 9
+    },
+    "end": {
+     "day": 15,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 12
+    },
+    "end": {
+     "day": 20,
+     "month": 1
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Autumn season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 58,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "Delta region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 1
+    },
+    "end": {
+     "day": 1,
+     "month": 2
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 20,
+     "month": 4
+    },
+    "end": {
+     "day": 30,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 59,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "near by Delta region old reclaimed soils \"NDRORL\"",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 1
+    },
+    "end": {
+     "day": 1,
+     "month": 2
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 20,
+     "month": 4
+    },
+    "end": {
+     "day": 30,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 60,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "near by Delta region new reclaimed soils \"NDRNRL\"",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 1
+    },
+    "end": {
+     "day": 1,
+     "month": 2
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 20,
+     "month": 4
+    },
+    "end": {
+     "day": 30,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 61,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "North West Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 1
+    },
+    "end": {
+     "day": 1,
+     "month": 2
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 20,
+     "month": 4
+    },
+    "end": {
+     "day": 30,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 62,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "North Sinai Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 1
+    },
+    "end": {
+     "day": 1,
+     "month": 2
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 20,
+     "month": 4
+    },
+    "end": {
+     "day": 30,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 63,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "South Sinai Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 1
+    },
+    "end": {
+     "day": 1,
+     "month": 2
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 20,
+     "month": 4
+    },
+    "end": {
+     "day": 30,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 64,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "Middle Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 1
+    },
+    "end": {
+     "day": 1,
+     "month": 2
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 20,
+     "month": 4
+    },
+    "end": {
+     "day": 30,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 65,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "Middle Egypt new reclaimed land Region \"MENRL\"",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 1
+    },
+    "end": {
+     "day": 1,
+     "month": 2
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 20,
+     "month": 4
+    },
+    "end": {
+     "day": 30,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 66,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "Upper Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 1
+    },
+    "end": {
+     "day": 1,
+     "month": 2
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 20,
+     "month": 4
+    },
+    "end": {
+     "day": 30,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 67,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "Upper Egypt new reclaimed land Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 1
+    },
+    "end": {
+     "day": 1,
+     "month": 2
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 20,
+     "month": 4
+    },
+    "end": {
+     "day": 30,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 68,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "New Valley (Oasis)",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 1
+    },
+    "end": {
+     "day": 1,
+     "month": 2
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 20,
+     "month": 4
+    },
+    "end": {
+     "day": 30,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 69,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": null,
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 1
+    },
+    "end": {
+     "day": 1,
+     "month": 2
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 20,
+     "month": 4
+    },
+    "end": {
+     "day": 30,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 70,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "potato",
+   "reported_crop": "Potato",
+   "country": "Egypt",
+   "zone": "Toska Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 1
+    },
+    "end": {
+     "day": 1,
+     "month": 2
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 20,
+     "month": 4
+    },
+    "end": {
+     "day": 30,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    120,
+    140
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 71,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "faba",
+   "reported_crop": "Bean, broad green",
+   "country": "Egypt",
+   "zone": "Upper Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 2
+    },
+    "end": {
+     "day": 20,
+     "month": 2
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 5
+    },
+    "end": {
+     "day": 15,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    90,
+    110
+   ],
+   "additional_information": "summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 98,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "faba",
+   "reported_crop": "Bean, broad green",
+   "country": "Egypt",
+   "zone": "Middle Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 2
+    },
+    "end": {
+     "day": 1,
+     "month": 3
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 20,
+     "month": 5
+    },
+    "end": {
+     "day": 30,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    90,
+    110
+   ],
+   "additional_information": "summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 99,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "faba",
+   "reported_crop": "Bean, broad green",
+   "country": "Egypt",
+   "zone": "Delta region",
+   "sowing_window": {
+    "start": {
+     "day": 20,
+     "month": 2
+    },
+    "end": {
+     "day": 10,
+     "month": 3
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 6
+    }
+   },
+   "growing_days_range": [
+    90,
+    110
+   ],
+   "additional_information": "summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 100,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "faba",
+   "reported_crop": "Bean, broad green",
+   "country": "Egypt",
+   "zone": "near by Delta region old reclaimed soils \"NDRORL\"",
+   "sowing_window": {
+    "start": {
+     "day": 20,
+     "month": 2
+    },
+    "end": {
+     "day": 10,
+     "month": 3
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 6
+    }
+   },
+   "growing_days_range": [
+    90,
+    110
+   ],
+   "additional_information": "summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 101,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "faba",
+   "reported_crop": "Bean, broad green",
+   "country": "Egypt",
+   "zone": "Upper Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 9
+    },
+    "end": {
+     "day": 15,
+     "month": 9
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 11
+    },
+    "end": {
+     "day": 20,
+     "month": 11
+    }
+   },
+   "growing_days_range": [
+    90,
+    100
+   ],
+   "additional_information": "Autumn Season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 102,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "faba",
+   "reported_crop": "Bean, broad green",
+   "country": "Egypt",
+   "zone": "Middle Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 9
+    },
+    "end": {
+     "day": 15,
+     "month": 9
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 11
+    },
+    "end": {
+     "day": 20,
+     "month": 11
+    }
+   },
+   "growing_days_range": [
+    90,
+    100
+   ],
+   "additional_information": "Autumn Season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 103,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "faba",
+   "reported_crop": "Bean, broad green",
+   "country": "Egypt",
+   "zone": "Delta region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 8
+    },
+    "end": {
+     "day": 15,
+     "month": 9
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 20,
+     "month": 10
+    },
+    "end": {
+     "day": 10,
+     "month": 11
+    }
+   },
+   "growing_days_range": [
+    90,
+    100
+   ],
+   "additional_information": "Autumn Season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 104,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "faba",
+   "reported_crop": "Bean, broad green",
+   "country": "Egypt",
+   "zone": "near by Delta region old reclaimed soils \"NDRORL\"",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 8
+    },
+    "end": {
+     "day": 15,
+     "month": 9
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 20,
+     "month": 10
+    },
+    "end": {
+     "day": 10,
+     "month": 11
+    }
+   },
+   "growing_days_range": [
+    90,
+    100
+   ],
+   "additional_information": "Autumn Season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 105,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sugarbeet",
+   "reported_crop": "Beet, sugar",
+   "country": "Egypt",
+   "zone": "Delta region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 10
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 10,
+     "month": 4
+    },
+    "end": {
+     "day": 1,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    170,
+    200
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 151,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sugarbeet",
+   "reported_crop": "Beet, sugar",
+   "country": "Egypt",
+   "zone": "near by Delta region old reclaimed soils \"NDRORL\"",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 10
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 10,
+     "month": 4
+    },
+    "end": {
+     "day": 1,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    170,
+    200
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 152,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sugarbeet",
+   "reported_crop": "Beet, sugar",
+   "country": "Egypt",
+   "zone": "near by Delta region new reclaimed soils \"NDRNRL\"",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 10
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 10,
+     "month": 4
+    },
+    "end": {
+     "day": 1,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    170,
+    200
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 153,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sugarbeet",
+   "reported_crop": "Beet, sugar",
+   "country": "Egypt",
+   "zone": "North West Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 10
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 10,
+     "month": 4
+    },
+    "end": {
+     "day": 1,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    170,
+    200
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 154,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sugarbeet",
+   "reported_crop": "Beet, sugar",
+   "country": "Egypt",
+   "zone": "North Sinai Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 10
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 10,
+     "month": 4
+    },
+    "end": {
+     "day": 1,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    170,
+    200
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 155,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sugarbeet",
+   "reported_crop": "Beet, sugar",
+   "country": "Egypt",
+   "zone": "South Sinai Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 10
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 10,
+     "month": 4
+    },
+    "end": {
+     "day": 1,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    170,
+    200
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 156,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sugarbeet",
+   "reported_crop": "Beet, sugar",
+   "country": "Egypt",
+   "zone": "Middle Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 10
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 10,
+     "month": 4
+    },
+    "end": {
+     "day": 1,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    170,
+    200
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 157,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sugarbeet",
+   "reported_crop": "Beet, sugar",
+   "country": "Egypt",
+   "zone": "Middle Egypt new reclaimed land Region \"MENRL\"",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 10
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 10,
+     "month": 4
+    },
+    "end": {
+     "day": 1,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    170,
+    200
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 158,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sugarbeet",
+   "reported_crop": "Beet, sugar",
+   "country": "Egypt",
+   "zone": "Upper Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 10
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 10,
+     "month": 4
+    },
+    "end": {
+     "day": 1,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    170,
+    200
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 159,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sugarbeet",
+   "reported_crop": "Beet, sugar",
+   "country": "Egypt",
+   "zone": "Upper Egypt new reclaimed land Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 10
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 10,
+     "month": 4
+    },
+    "end": {
+     "day": 1,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    170,
+    200
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 160,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sugarbeet",
+   "reported_crop": "Beet, sugar",
+   "country": "Egypt",
+   "zone": "New Valley (Oasis)",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 10
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 10,
+     "month": 4
+    },
+    "end": {
+     "day": 1,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    170,
+    200
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 161,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sugarbeet",
+   "reported_crop": "Beet, sugar",
+   "country": "Egypt",
+   "zone": null,
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 10
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 10,
+     "month": 4
+    },
+    "end": {
+     "day": 1,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    170,
+    200
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 162,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sugarbeet",
+   "reported_crop": "Beet, sugar",
+   "country": "Egypt",
+   "zone": "Toska Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 10
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 10,
+     "month": 4
+    },
+    "end": {
+     "day": 1,
+     "month": 5
+    }
+   },
+   "growing_days_range": [
+    170,
+    200
+   ],
+   "additional_information": "5",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 163,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "Delta region",
+   "sowing_window": {
+    "start": {
+     "day": 10,
+     "month": 3
+    },
+    "end": {
+     "day": 20,
+     "month": 4
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 211,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "near by Delta region old reclaimed soils \"NDRORL\"",
+   "sowing_window": {
+    "start": {
+     "day": 10,
+     "month": 3
+    },
+    "end": {
+     "day": 20,
+     "month": 4
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 212,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "near by Delta region new reclaimed soils \"NDRNRL\"",
+   "sowing_window": {
+    "start": {
+     "day": 10,
+     "month": 3
+    },
+    "end": {
+     "day": 20,
+     "month": 4
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 213,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "North West Region",
+   "sowing_window": {
+    "start": {
+     "day": 10,
+     "month": 3
+    },
+    "end": {
+     "day": 20,
+     "month": 4
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 214,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "North Sinai Region",
+   "sowing_window": {
+    "start": {
+     "day": 10,
+     "month": 3
+    },
+    "end": {
+     "day": 20,
+     "month": 4
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 215,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "South Sinai Region",
+   "sowing_window": {
+    "start": {
+     "day": 10,
+     "month": 3
+    },
+    "end": {
+     "day": 20,
+     "month": 4
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 216,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "Middle Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 10,
+     "month": 3
+    },
+    "end": {
+     "day": 20,
+     "month": 4
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 217,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "Middle Egypt new reclaimed land Region \"MENRL\"",
+   "sowing_window": {
+    "start": {
+     "day": 10,
+     "month": 3
+    },
+    "end": {
+     "day": 20,
+     "month": 4
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 218,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "Upper Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 10,
+     "month": 3
+    },
+    "end": {
+     "day": 20,
+     "month": 4
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 219,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "Upper Egypt new reclaimed land Region",
+   "sowing_window": {
+    "start": {
+     "day": 10,
+     "month": 3
+    },
+    "end": {
+     "day": 20,
+     "month": 4
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 220,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "New Valley (Oasis)",
+   "sowing_window": {
+    "start": {
+     "day": 10,
+     "month": 3
+    },
+    "end": {
+     "day": 20,
+     "month": 4
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 221,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": null,
+   "sowing_window": {
+    "start": {
+     "day": 10,
+     "month": 3
+    },
+    "end": {
+     "day": 20,
+     "month": 4
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 222,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "Toska Region",
+   "sowing_window": {
+    "start": {
+     "day": 10,
+     "month": 3
+    },
+    "end": {
+     "day": 20,
+     "month": 4
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 223,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "Delta region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 5
+    },
+    "end": {
+     "day": 10,
+     "month": 6
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Early summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 224,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "near by Delta region old reclaimed soils \"NDRORL\"",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 5
+    },
+    "end": {
+     "day": 10,
+     "month": 6
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Early summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 225,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "near by Delta region new reclaimed soils \"NDRNRL\"",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 5
+    },
+    "end": {
+     "day": 10,
+     "month": 6
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Early summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 226,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "North West Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 5
+    },
+    "end": {
+     "day": 10,
+     "month": 6
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Early summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 227,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "North Sinai Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 5
+    },
+    "end": {
+     "day": 10,
+     "month": 6
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Early summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 228,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "South Sinai Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 5
+    },
+    "end": {
+     "day": 10,
+     "month": 6
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Early summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 229,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "Middle Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 5
+    },
+    "end": {
+     "day": 10,
+     "month": 6
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Early summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 230,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "Middle Egypt new reclaimed land Region \"MENRL\"",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 5
+    },
+    "end": {
+     "day": 10,
+     "month": 6
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Early summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 231,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "Upper Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 5
+    },
+    "end": {
+     "day": 10,
+     "month": 6
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Early summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 232,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "Upper Egypt new reclaimed land Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 5
+    },
+    "end": {
+     "day": 10,
+     "month": 6
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Early summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 233,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "New Valley (Oasis)",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 5
+    },
+    "end": {
+     "day": 10,
+     "month": 6
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Early summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 234,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": null,
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 5
+    },
+    "end": {
+     "day": 10,
+     "month": 6
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Early summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 235,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "Toska Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 5
+    },
+    "end": {
+     "day": 10,
+     "month": 6
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 6
+    },
+    "end": {
+     "day": 20,
+     "month": 10
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Early summer season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 236,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "Middle Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 7
+    },
+    "end": {
+     "day": 25,
+     "month": 7
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 10
+    },
+    "end": {
+     "day": 30,
+     "month": 11
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Autumn Season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 237,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "sunflower",
+   "reported_crop": "Sunflower",
+   "country": "Egypt",
+   "zone": "Upper Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 7
+    },
+    "end": {
+     "day": 25,
+     "month": 7
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 10
+    },
+    "end": {
+     "day": 30,
+     "month": 11
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "Autumn Season",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 238,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "onion",
+   "reported_crop": "Onion",
+   "country": "Egypt",
+   "zone": "Upper Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 8
+    },
+    "end": {
+     "day": 10,
+     "month": 9
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 2
+    },
+    "end": {
+     "day": 15,
+     "month": 3
+    }
+   },
+   "growing_days_range": [
+    200,
+    240
+   ],
+   "additional_information": "Short day types cultivars (Cvs)",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 466,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "onion",
+   "reported_crop": "Onion",
+   "country": "Egypt",
+   "zone": "Middle Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 9
+    },
+    "end": {
+     "day": 10,
+     "month": 9
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 3
+    },
+    "end": {
+     "day": 1,
+     "month": 4
+    }
+   },
+   "growing_days_range": [
+    200,
+    240
+   ],
+   "additional_information": "Short- intermediate day (Cvs)",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 467,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "onion",
+   "reported_crop": "Onion",
+   "country": "Egypt",
+   "zone": "Delta region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 10
+    },
+    "end": {
+     "day": 1,
+     "month": 11
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 4
+    },
+    "end": {
+     "day": 1,
+     "month": 6
+    }
+   },
+   "growing_days_range": [
+    200,
+    240
+   ],
+   "additional_information": "intermediate day (Cvs)",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 468,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "onion",
+   "reported_crop": "Onion",
+   "country": "Egypt",
+   "zone": "Delta region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 8
+    },
+    "end": {
+     "day": 25,
+     "month": 9
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 2
+    },
+    "end": {
+     "day": 31,
+     "month": 3
+    }
+   },
+   "growing_days_range": [
+    170,
+    190
+   ],
+   "additional_information": "intermediate day (Cvs), using small sets produced from early summer sowing seeds",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 469,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "onion",
+   "reported_crop": "Onion",
+   "country": "Egypt",
+   "zone": "near by Delta region old reclaimed soils \"NDRORL\"",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 8
+    },
+    "end": {
+     "day": 25,
+     "month": 9
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 2
+    },
+    "end": {
+     "day": 31,
+     "month": 3
+    }
+   },
+   "growing_days_range": [
+    170,
+    190
+   ],
+   "additional_information": "intermediate day (Cvs), using small sets produced from early summer sowing seeds",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 470,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "tomato",
+   "reported_crop": "Tomato",
+   "country": "Egypt",
+   "zone": "Toska Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 9
+    },
+    "end": {
+     "day": 10,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 12
+    },
+    "end": {
+     "day": 10,
+     "month": 2
+    }
+   },
+   "growing_days_range": [
+    120,
+    150
+   ],
+   "additional_information": "seedling trays in green or net house",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 542,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "tomato",
+   "reported_crop": "Tomato",
+   "country": "Egypt",
+   "zone": "Upper Egypt new reclaimed land Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 9
+    },
+    "end": {
+     "day": 10,
+     "month": 10
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 12
+    },
+    "end": {
+     "day": 10,
+     "month": 2
+    }
+   },
+   "growing_days_range": [
+    120,
+    150
+   ],
+   "additional_information": "seedling trays in green or net house",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 543,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "tomato",
+   "reported_crop": "Tomato",
+   "country": "Egypt",
+   "zone": "Middle Egypt new reclaimed land Region \"MENRL\"",
+   "sowing_window": {
+    "start": {
+     "day": 25,
+     "month": 10
+    },
+    "end": {
+     "day": 25,
+     "month": 12
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 2
+    },
+    "end": {
+     "day": 15,
+     "month": 6
+    }
+   },
+   "growing_days_range": [
+    140,
+    180
+   ],
+   "additional_information": "seedling trays in green or net house",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 544,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "tomato",
+   "reported_crop": "Tomato",
+   "country": "Egypt",
+   "zone": "near by Delta region new reclaimed soils \"NDRNRL\"",
+   "sowing_window": {
+    "start": {
+     "day": 25,
+     "month": 10
+    },
+    "end": {
+     "day": 25,
+     "month": 12
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 2
+    },
+    "end": {
+     "day": 15,
+     "month": 6
+    }
+   },
+   "growing_days_range": [
+    140,
+    180
+   ],
+   "additional_information": "seedling trays in green or net house",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 545,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "tomato",
+   "reported_crop": "Tomato",
+   "country": "Egypt",
+   "zone": "near by Delta region old reclaimed soils \"NDRORL\"",
+   "sowing_window": {
+    "start": {
+     "day": 25,
+     "month": 10
+    },
+    "end": {
+     "day": 25,
+     "month": 12
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 2
+    },
+    "end": {
+     "day": 15,
+     "month": 6
+    }
+   },
+   "growing_days_range": [
+    140,
+    180
+   ],
+   "additional_information": "seedling trays in green or net house",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 546,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "tomato",
+   "reported_crop": "Tomato",
+   "country": "Egypt",
+   "zone": "North Sinai Region",
+   "sowing_window": {
+    "start": {
+     "day": 25,
+     "month": 10
+    },
+    "end": {
+     "day": 25,
+     "month": 12
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 2
+    },
+    "end": {
+     "day": 15,
+     "month": 6
+    }
+   },
+   "growing_days_range": [
+    140,
+    180
+   ],
+   "additional_information": "seedling trays in green or net house",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 547,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "tomato",
+   "reported_crop": "Tomato",
+   "country": "Egypt",
+   "zone": "Upper Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 1
+    },
+    "end": {
+     "day": 1,
+     "month": 3
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 4
+    },
+    "end": {
+     "day": 1,
+     "month": 7
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "traditional nurseries method is the main application",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 548,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "tomato",
+   "reported_crop": "Tomato",
+   "country": "Egypt",
+   "zone": "Middle Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 2
+    },
+    "end": {
+     "day": 15,
+     "month": 5
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 5
+    },
+    "end": {
+     "day": 31,
+     "month": 8
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "traditional nurseries method is the main application",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 549,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "tomato",
+   "reported_crop": "Tomato",
+   "country": "Egypt",
+   "zone": "Delta region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 3
+    },
+    "end": {
+     "day": 1,
+     "month": 5
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 6
+    },
+    "end": {
+     "day": 30,
+     "month": 9
+    }
+   },
+   "growing_days_range": [
+    110,
+    130
+   ],
+   "additional_information": "traditional nurseries method is the main application",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 550,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "tomato",
+   "reported_crop": "Tomato",
+   "country": "Egypt",
+   "zone": "North West Region",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 3
+    },
+    "end": {
+     "day": 1,
+     "month": 5
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 1,
+     "month": 6
+    },
+    "end": {
+     "day": 30,
+     "month": 9
+    }
+   },
+   "growing_days_range": [
+    120,
+    150
+   ],
+   "additional_information": "traditional nurseries method is the main application",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 551,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "tomato",
+   "reported_crop": "Tomato",
+   "country": "Egypt",
+   "zone": "near by Delta region old reclaimed soils \"NDRORL\"",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 8
+    },
+    "end": {
+     "day": 1,
+     "month": 9
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 10
+    },
+    "end": {
+     "day": 20,
+     "month": 12
+    }
+   },
+   "growing_days_range": [
+    100,
+    130
+   ],
+   "additional_information": "seedling trays in green or net house",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 552,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "tomato",
+   "reported_crop": "Tomato",
+   "country": "Egypt",
+   "zone": "near by Delta region new reclaimed soils \"NDRNRL\"",
+   "sowing_window": {
+    "start": {
+     "day": 1,
+     "month": 8
+    },
+    "end": {
+     "day": 1,
+     "month": 9
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 10
+    },
+    "end": {
+     "day": 20,
+     "month": 12
+    }
+   },
+   "growing_days_range": [
+    100,
+    130
+   ],
+   "additional_information": "seedling trays in green or net house",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 553,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "tomato",
+   "reported_crop": "Tomato",
+   "country": "Egypt",
+   "zone": "Middle Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 8
+    },
+    "end": {
+     "day": 15,
+     "month": 9
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 10
+    },
+    "end": {
+     "day": 20,
+     "month": 12
+    }
+   },
+   "growing_days_range": [
+    100,
+    130
+   ],
+   "additional_information": "traditional nurseries method is the main application",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 554,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  },
+  {
+   "crop_id": "tomato",
+   "reported_crop": "Tomato",
+   "country": "Egypt",
+   "zone": "Upper Egypt Region",
+   "sowing_window": {
+    "start": {
+     "day": 15,
+     "month": 8
+    },
+    "end": {
+     "day": 15,
+     "month": 9
+    }
+   },
+   "harvest_window": {
+    "start": {
+     "day": 15,
+     "month": 10
+    },
+    "end": {
+     "day": 20,
+     "month": 12
+    }
+   },
+   "growing_days_range": [
+    100,
+    130
+   ],
+   "additional_information": "traditional nurseries method is the main application",
+   "source_file": "Crop_Calendar_Data_All.xlsx",
+   "sheet": "Crop Calendar Data",
+   "source_excel_row": 555,
+   "source_url": "https://cropcalendar.apps.fao.org/",
+   "source_note": "Historical regional calendar; does not verify farm location or current cultivar."
+  }
+ ],
+ "zones": [
+  "Delta region",
+  "Middle Egypt Region",
+  "Middle Egypt new reclaimed land Region \"MENRL\"",
+  "New Valley (Oasis)",
+  "North Sinai Region",
+  "North West Region",
+  "South Sinai Region",
+  "Toska Region",
+  "Upper Egypt Region",
+  "Upper Egypt new reclaimed land Region",
+  "near by Delta region new reclaimed soils \"NDRNRL\"",
+  "near by Delta region old reclaimed soils \"NDRORL\""
+ ],
+ "missing_crop_calendar_records": [
+  "maize",
+  "cotton",
+  "alfalfa"
+ ],
+ "notes": [
+  "Some rows lack AgroEcological Zone; these are NOT mapped to any location automatically.",
+  "Field corn/maize is NOT the same as Corn, sweet and will not be silently substituted.",
+  "Faba bean (fresh harvest) is mapped to Bean, broad green, not the dry-seed crop.",
+  "No automated GIS zoning or country-wide calendar inference. Farmer must select a known zone."
+ ]
+}

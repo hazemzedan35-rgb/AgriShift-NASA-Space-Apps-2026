@@ -1,0 +1,13 @@
+﻿crop_id,ecocrop_scientific_name,EcoPortCode,ecocrop_source,calendar_records_egypt,calendar_delta_records,calendar_source
+wheat,Triticum aestivum,2114,https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv,13,1,https://cropcalendar.apps.fao.org/
+faba,Vicia faba,2146,https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv,8,2,https://cropcalendar.apps.fao.org/
+maize,Zea mays,2175,https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv,0,0,https://cropcalendar.apps.fao.org/
+sunflower,Helianthus annuus,1191,https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv,28,2,https://cropcalendar.apps.fao.org/
+rice,Oryza sativa,1574,https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv,3,0,https://cropcalendar.apps.fao.org/
+cotton,Gossypium barbadense,1158,https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv,0,0,https://cropcalendar.apps.fao.org/
+potato,Solanum tuberosum,1971,https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv,26,2,https://cropcalendar.apps.fao.org/
+tomato,Lycopersicon esculentum,1379,https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv,14,1,https://cropcalendar.apps.fao.org/
+onion,Allium cepa,364,https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv,5,2,https://cropcalendar.apps.fao.org/
+sugarbeet,Beta vulgaris,514,https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv,13,1,https://cropcalendar.apps.fao.org/
+alfalfa,Medicago sativa,1428,https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv,0,0,https://cropcalendar.apps.fao.org/
+sorghum,Sorghum bicolor,48747,https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv,3,0,https://cropcalendar.apps.fao.org/

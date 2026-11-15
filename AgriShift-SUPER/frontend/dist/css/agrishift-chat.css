@@ -1,0 +1,77 @@
+/* AgriShift persistent chat UI. Scoped styles; no external dependencies. */
+.agri-chat-root{--ac-ink:#071e30;--ac-teal:#18c9ea;--ac-lime:#a5eb37;--ac-cream:#f7f6ed;position:fixed;bottom:max(22px,env(safe-area-inset-bottom));right:max(24px,env(safe-area-inset-right));z-index:620;display:flex;flex-direction:column;align-items:flex-end;gap:13px;font-family:Inter,"DM Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ac-ink);font-size:14px;isolation:isolate}
+.agri-chat-root *{box-sizing:border-box}
+.agri-chat-root button{font:inherit;cursor:pointer}
+.agri-chat-launch{position:relative;display:flex;align-items:center;gap:11px;padding:7px 7px 7px 18px;border:1px solid #b1d6ad;border-radius:999px;background:var(--ac-cream);color:#102f3a;box-shadow:0 12px 30px #051c2740,0 2px 8px #24483412;transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s ease,border-color .3s ease;max-width:min(290px,calc(100vw - 24px))}
+.agri-chat-launch:hover{transform:translateY(-3px);box-shadow:0 18px 38px #061c2850;border-color:#83b89b}
+.agri-chat-launch:focus-visible,.agri-chat-action:focus-visible,.agri-chat-send:focus-visible,.agri-chat-suggest:focus-visible,.agri-chat-input:focus-visible{outline:3px solid #18c9ea;outline-offset:3px}
+.agri-chat-launch-text{text-align:left;display:flex;flex-direction:column;gap:1px;white-space:nowrap}
+.agri-chat-launch-text strong{font-weight:850;font-size:12px;letter-spacing:.1px}
+.agri-chat-launch-text small{font-size:10px;font-weight:600;color:#577079}
+.agri-chat-launch-disc{display:grid;place-items:center;width:53px;height:53px;flex:none;border-radius:50%;background:radial-gradient(circle at 25% 20%,#275d58,#082b38 70%);border:2px solid #3d7668;box-shadow:inset 0 0 0 1px #8edbab22,0 0 0 4px #a5eb3729;position:relative}
+.agri-chat-launch-disc img{width:35px;height:35px;object-fit:contain;filter:drop-shadow(0 1px 1px #031421)}
+.agri-chat-launch-disc::after{content:"";position:absolute;width:9px;height:9px;background:var(--ac-lime);border:2px solid var(--ac-cream);border-radius:50%;right:0;top:0}
+.agri-chat-root.is-open .agri-chat-launch{transform:scale(.96)}
+.agri-chat-panel[hidden]{display:none!important}
+.agri-chat-panel{display:flex;flex-direction:column;overflow:hidden;width:min(412px,calc(100vw - 26px));height:min(628px,calc(100dvh - 128px));min-height:310px;background:#f8faf4;border:1px solid #e4e8de;border-radius:25px;box-shadow:0 32px 90px #041b2d5b,0 8px 24px #041b2d24;transform:translateY(15px) scale(.97);opacity:0;transform-origin:bottom right;transition:opacity .24s ease,transform .3s cubic-bezier(.2,.8,.2,1);position:relative}
+.agri-chat-root.is-open .agri-chat-panel{transform:translateY(0) scale(1);opacity:1}
+.agri-chat-header{position:relative;flex:none;background:linear-gradient(120deg,#0b2536,#10443e 75%,#205d4f);color:#f7fcf4;padding:18px 16px 16px;isolation:isolate;display:flex;align-items:center;gap:10px;min-height:93px}
+.agri-chat-header::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;opacity:.65;background:radial-gradient(circle at 88% 5%,#a5eb372a,transparent 33%),radial-gradient(#b5fbce18 .7px,transparent 1px);background-size:auto,22px 22px}
+.agri-chat-avatar{width:46px;height:46px;flex:none;border-radius:16px;background:#d8f3cb;padding:8px;display:grid;place-items:center;box-shadow:0 5px 16px #061b266b}
+.agri-chat-avatar img{max-width:100%;max-height:100%;object-fit:contain}
+.agri-chat-heading{min-width:0;flex:1;display:flex;flex-direction:column;gap:3px}
+.agri-chat-heading strong{font-size:17px;letter-spacing:-.45px;font-weight:820}
+.agri-chat-status{font-size:10px;color:#c0dedb;display:flex;align-items:center;gap:5px;line-height:1.4}
+.agri-chat-dot{width:6px;height:6px;border-radius:50%;background:#e9bf7d;flex:none}
+.agri-chat-root[data-connected="yes"] .agri-chat-dot{background:#a5eb37}
+.agri-chat-root[data-connected="fail"] .agri-chat-dot{background:#f2a2a2}
+.agri-chat-head-actions{display:flex;gap:3px;align-self:flex-start}
+.agri-chat-action{display:grid;place-items:center;flex:none;width:30px;height:30px;color:#effcf1;border:none;border-radius:9px;background:transparent;transition:background .2s ease}
+.agri-chat-action:hover{background:#ffffff24}
+.agri-chat-action svg{width:17px;height:17px}
+.agri-chat-messages{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:19px 16px 13px;display:flex;flex-direction:column;gap:13px;scrollbar-width:thin;scrollbar-color:#b8cfbc transparent}
+.agri-chat-welcome{display:flex;flex-direction:column;gap:10px;padding-bottom:4px;max-width:96%}
+.agri-chat-welcome-icon{width:37px;height:37px;border-radius:13px;display:grid;place-items:center;background:#e2f0d7;color:#236d57;font-size:20px}
+.agri-chat-welcome strong{font:700 25px/1.1 Georgia,serif;letter-spacing:-.7px;color:#133c37}
+.agri-chat-welcome p{font-size:12px;color:#647a78;line-height:1.7;margin:0;max-width:32ch}
+.agri-chat-connection-hint{padding:11px 12px;border-radius:13px;background:#fff3df;border:1px solid #f0dcba;color:#6c5233;font-size:11px;line-height:1.55}
+.agri-chat-message{display:flex;flex-direction:column;gap:4px;max-width:90%;min-width:0;animation:agri-chat-enter .2s ease-out both}
+.agri-chat-message[data-role="user"]{align-self:flex-end;align-items:flex-end}
+.agri-chat-message[data-role="assistant"],.agri-chat-message[data-role="notice"]{align-self:flex-start;align-items:flex-start}
+.agri-chat-message-label{font-size:9px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:#7f9494;padding:0 5px}
+.agri-chat-bubble{padding:12px 14px;border-radius:16px;background:#ecf1e9;color:#243d3e;font-size:12.5px;line-height:1.65;overflow-wrap:anywhere;white-space:pre-wrap;border:1px solid #e0e8df}
+.agri-chat-message[data-role="user"] .agri-chat-bubble{background:#0d3b48;color:#f3fff6;border-color:#0d3b48;border-bottom-right-radius:5px}
+.agri-chat-message[data-role="assistant"] .agri-chat-bubble{border-bottom-left-radius:5px}
+.agri-chat-message[data-role="notice"] .agri-chat-bubble{background:#fff4e5;color:#765533;border-color:#f4e1c5}
+.agri-chat-typing{display:flex;gap:5px;padding:13px 14px;background:#e7efe5;border:1px solid #d9e6d8;border-radius:16px;border-bottom-left-radius:5px;align-self:flex-start}
+.agri-chat-typing span{width:5px;height:5px;background:#567b6a;border-radius:50%;animation:agri-chat-pulse 1s infinite alternate}
+.agri-chat-typing span:nth-child(2){animation-delay:.15s}.agri-chat-typing span:nth-child(3){animation-delay:.3s}
+.agri-chat-suggestions{flex:none;display:flex;gap:6px;flex-wrap:wrap;padding:8px 13px 0;border-top:1px solid #e2e9e1;background:#f8faf4}
+.agri-chat-suggest{font-size:10.5px!important;line-height:1.3;background:#eef5e8;border:1px solid #cfdfca;color:#31584c;border-radius:999px;padding:8px 11px;transition:background .2s ease,transform .2s ease}
+.agri-chat-suggest:hover{background:#dbeed1;transform:translateY(-1px)}
+.agri-chat-form{flex:none;display:flex;align-items:flex-end;gap:9px;padding:11px 13px 7px;background:#f8faf4}
+.agri-chat-input-wrap{flex:1;border-radius:17px;border:1px solid #d2ded5;background:#fff;min-width:0;display:flex;align-items:flex-end;transition:border-color .2s ease,box-shadow .2s ease}
+.agri-chat-input-wrap:focus-within{border-color:#3d9f83;box-shadow:0 0 0 3px #18c9ea24}
+.agri-chat-input{border:0!important;outline:0!important;box-shadow:none!important;resize:none;min-height:22px;max-height:108px;width:100%;background:transparent!important;padding:11px 12px!important;font-family:inherit!important;font-size:12.5px!important;color:#0b3540!important;line-height:1.55!important;display:block;overflow-y:auto;margin:0!important;border-radius:0!important}
+.agri-chat-input::placeholder{color:#819391}
+.agri-chat-send{flex:none;width:44px;height:44px;border:0;border-radius:15px;background:var(--ac-ink);color:#baf47f;display:grid;place-items:center;transition:transform .2s ease,background .2s ease}
+.agri-chat-send:hover:not(:disabled){background:#165347;transform:translateY(-1px)}
+.agri-chat-send:disabled{opacity:.5;cursor:default}
+.agri-chat-send svg{width:19px;height:19px}
+.agri-chat-footnote{flex:none;padding:2px 17px 11px;background:#f8faf4;color:#778983;font-size:9.5px;line-height:1.3;text-align:center}
+body.cinema-menu-open .agri-chat-root,body.agri-flow-navigating .agri-chat-root{pointer-events:none;visibility:hidden}
+@keyframes agri-chat-pulse{to{opacity:.25;transform:translateY(-3px)}}
+@keyframes agri-chat-enter{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.agri-chat-root{right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));gap:8px}.agri-chat-launch{padding:5px;box-shadow:0 10px 30px #061c284e}.agri-chat-launch-text{display:none}.agri-chat-launch-disc{height:53px;width:53px}.agri-chat-panel{width:calc(100vw - 24px);height:min(74dvh,670px);max-height:calc(100dvh - 100px);border-radius:22px}.agri-chat-header{min-height:79px;padding:13px}.agri-chat-messages{padding:14px 13px}.agri-chat-welcome strong{font-size:22px}.agri-chat-suggestions{padding:7px 10px 0}.agri-chat-suggest{font-size:10px!important}.agri-chat-form{padding:9px 10px 5px}}
+@media(max-height:570px){.agri-chat-panel{height:calc(100dvh - 86px);min-height:220px}.agri-chat-header{min-height:65px;padding:9px 14px}.agri-chat-messages{padding:10px 13px}}
+@media(prefers-reduced-motion:reduce){.agri-chat-root *, .agri-chat-root *::before,.agri-chat-root *::after{animation:none!important;transition:none!important}}
+.agri-chat-bubble h4{display:block;margin:8px 0 2px;font-size:13px;line-height:1.4;color:#14383a}
+.agri-chat-bubble a{color:#0b7d8e;text-decoration:underline;overflow-wrap:anywhere}
+.agri-chat-bubble b{color:#102f3a}
+.agri-chat-lang{font:700 12px/1 inherit;min-width:34px}
+.agri-chat-typing{display:flex;align-items:center;gap:4px}
+.agri-chat-typing-label{margin-inline-start:6px;font-size:11px;color:#4b6a62}
+.agri-chat-start{display:inline-block;margin-top:9px;padding:8px 15px;border-radius:999px;background:#071e30;color:#fff!important;text-decoration:none!important;font-weight:600;font-size:12px}
+.agri-chat-start:hover{background:#0c3550}
+.agri-chat-start-hint{margin-top:7px;font-size:11px;line-height:1.5;color:#4b6a62}
+.agri-chat-panel[dir=rtl] .agri-chat-bubble,.agri-chat-panel[dir=rtl] .agri-chat-input{text-align:right}

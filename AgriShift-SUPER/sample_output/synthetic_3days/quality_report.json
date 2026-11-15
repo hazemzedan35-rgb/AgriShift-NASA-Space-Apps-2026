@@ -1,0 +1,54 @@
+{
+  "expected_days": 3,
+  "rows": 3,
+  "first_day": "2025-01-01",
+  "last_day": "2025-01-03",
+  "date_grid_complete": true,
+  "missing_values_by_parameter": {
+    "T2M": 0,
+    "T2M_MAX": 0,
+    "T2M_MIN": 0,
+    "PRECTOTCORR": 0,
+    "RH2M": 0,
+    "WS2M": 0,
+    "ALLSKY_SFC_SW_DWN": 0,
+    "PS": 0
+  },
+  "missing_date_keys_by_parameter": {
+    "T2M": 0,
+    "T2M_MAX": 0,
+    "T2M_MIN": 0,
+    "PRECTOTCORR": 0,
+    "RH2M": 0,
+    "WS2M": 0,
+    "ALLSKY_SFC_SW_DWN": 0,
+    "PS": 0
+  },
+  "observed_units": {
+    "T2M": "C",
+    "T2M_MAX": "C",
+    "T2M_MIN": "C",
+    "PRECTOTCORR": "mm/day",
+    "RH2M": "%",
+    "WS2M": "m/s",
+    "ALLSKY_SFC_SW_DWN": "MJ/m^2/day",
+    "PS": "kPa"
+  },
+  "expected_units": {
+    "T2M": "C",
+    "T2M_MAX": "C",
+    "T2M_MIN": "C",
+    "PRECTOTCORR": "mm/day",
+    "RH2M": "%",
+    "WS2M": "m/s",
+    "ALLSKY_SFC_SW_DWN": "MJ/m^2/day",
+    "PS": "kPa"
+  },
+  "suspicious_values": [],
+  "warnings": [
+    "Unverified provenance: this dataset must not be presented as observed NASA climate data."
+  ],
+  "all_parameters_fully_available": true,
+  "science_ready": false,
+  "data_provenance": "SYNTHETIC_TEST_FIXTURE"
+}

@@ -1,0 +1,36 @@
+{
+  "primary_reference": "FAO Irrigation and Drainage Paper 56 (1998)",
+  "reference_urls": [
+    "https://www.fao.org/4/X0490E/x0490e06.htm",
+    "https://www.fao.org/4/X0490E/x0490e07.htm",
+    "https://www.fao.org/4/X0490E/x0490e08.htm"
+  ],
+  "equation": "FAO Penman-Monteith daily Eq6",
+  "shortwave_rs": "NASA ALLSKY_SFC_SW_DWN MJ/m^2/day",
+  "fao_tmean": "(NASA T2M_MAX + NASA T2M_MIN) / 2, by FAO-56 convention",
+  "ea": "es*(NASA RH2M/100), FAO-56 Eq19 approximation",
+  "es": "(esat(Tmax)+esat(Tmin))/2",
+  "pressure": "NASA PS (kPa) used for psychrometric gamma",
+  "wind": "NASA WS2M already at 2m; no height conversion required",
+  "albedo": 0.23,
+  "ground_heat_flux": 0.0,
+  "clear_sky_radiation_elevation_m": 0.0,
+  "elevation_source": "zero-meter default assumption; not independently verified",
+  "inputs_stage1_verified": {
+    "verified_daily_rows": 365,
+    "first_day": "2025-01-01",
+    "last_day": "2025-12-31",
+    "csv_json_raw_exactly_equal": true,
+    "monthly_summary_matches_daily": true,
+    "units_checked": true,
+    "sha256_by_file": {
+      "daily_climate.csv": "10485e68c29ce1d23bd7e52c32984559c92b6f4ab3807226c960999d523d0190",
+      "daily_climate.json": "b05daca71c68e700007db36742252ef348682dcaaff5b38996ab62c11a30d209",
+      "metadata.json": "e2cf65dcb4f4adefe968ae3839690054a806fb27be5911b77cddc92f797d7734",
+      "monthly_summary.csv": "624d551d90276366818b557403ab8bdbc8cb6a2ba319c33a9bf8dafba0ba7fff",
+      "quality_report.json": "ea757511ca3b7a6135d149d0b95485ceb3c912d1ff61ac3afb6d741519fbf004",
+      "raw_nasa_response.json": "a1a48a72687f56b83657b453696b85935fa6973b2d18944d2fcb0f9aaa72776a"
+    }
+  },
+  "research_level": "reference ET0 calculation, not field-calibrated irrigation model"
+}

@@ -1,0 +1,1 @@
+Local WebP visuals (AI-generated illustrative images, NOT real photos). Offline UI assets: dist/img/crops/ (12), dist/img/hero/ (2), dist/img/team-logo.webp.

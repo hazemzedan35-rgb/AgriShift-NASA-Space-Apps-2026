@@ -1,0 +1,47 @@
+/* AgriShift / editorial hero title refinement
+   Reference-inspired typography, retained project palette and original UI structure.
+   Deliberately uses system serif fallbacks; no external fonts or dependencies. */
+.pantry-cover .agri-editorial-title{
+  display:block;
+  font-family:Georgia, 'Times New Roman', serif;
+  font-weight:700;
+  font-size:clamp(65px,8.6vw,148px);
+  line-height:.83;
+  letter-spacing:-.081em;
+  color:#092a37;
+  white-space:normal;
+  margin:clamp(26px,3vw,39px) 0 clamp(23px,3vw,37px);
+  font-kerning:normal;
+  font-feature-settings:'kern' 1;
+  overflow:visible;
+  text-wrap:nowrap;
+}
+.pantry-cover .agri-editorial-title .agri-title-line{display:block;white-space:nowrap;}
+.pantry-cover .agri-editorial-title .agri-title-line+ .agri-title-line{margin-top:.045em;}
+.pantry-cover .agri-editorial-title em{
+  font-style:italic;
+  font-weight:500;
+  color:#438e70;
+}
+.pantry-cover .agri-editorial-title .cover-period{color:#76bc43;font-style:normal;letter-spacing:-.05em;}
+/* Use the same editorial headline on the homepage and in the collection overview. */
+.dp-home-cover .pantry-cover-copy,
+.dispensa-edition .pantry-cover .pantry-cover-copy{overflow:visible;}
+@media (max-width:1280px){
+  .pantry-cover .agri-editorial-title{font-size:clamp(62px,8.8vw,127px);}
+}
+@media (max-width:960px){
+  .pantry-cover .agri-editorial-title{font-size:clamp(66px,10.3vw,100px);}
+}
+@media (max-width:600px){
+  .pantry-cover .agri-editorial-title{
+    font-size:clamp(51px,12.5vw,72px);
+    line-height:.87;
+    letter-spacing:-.08em;
+    margin:25px 0 28px;
+  }
+  .pantry-cover .agri-editorial-title .agri-title-line + .agri-title-line{margin-top:.02em;}
+}
+@media (max-width:375px){
+  .pantry-cover .agri-editorial-title{font-size:clamp(45px,12.25vw,51px);}
+}

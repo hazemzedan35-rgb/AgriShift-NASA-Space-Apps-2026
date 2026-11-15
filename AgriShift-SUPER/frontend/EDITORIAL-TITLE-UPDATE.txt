@@ -1,0 +1,1 @@
+Headline update: Homepage and Dashboard cover now show "The field / collection." in the editorial serif treatment from the supplied screenshot. The word field is italic green. Images, API, animations and layout structures were preserved. Added dist/css/editorial-title.css.

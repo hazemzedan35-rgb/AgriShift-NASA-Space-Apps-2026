@@ -1,0 +1,105 @@
+{
+  "_fixture_notice": "SYNTHETIC TEST DATA FOR CODE VALIDATION. NOT OBSERVED NASA DATA.",
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      31.5,
+      30.5,
+      12.0
+    ]
+  },
+  "properties": {
+    "parameter": {
+      "T2M": {
+        "20250101": 15.3,
+        "20250102": 15.6,
+        "20250103": 16.0
+      },
+      "T2M_MAX": {
+        "20250101": 21.0,
+        "20250102": 22.1,
+        "20250103": 22.5
+      },
+      "T2M_MIN": {
+        "20250101": 9.1,
+        "20250102": 9.0,
+        "20250103": 9.8
+      },
+      "PRECTOTCORR": {
+        "20250101": 0.0,
+        "20250102": 1.2,
+        "20250103": 0.0
+      },
+      "RH2M": {
+        "20250101": 68.0,
+        "20250102": 70.0,
+        "20250103": 72.0
+      },
+      "WS2M": {
+        "20250101": 2.6,
+        "20250102": 3.1,
+        "20250103": 2.0
+      },
+      "ALLSKY_SFC_SW_DWN": {
+        "20250101": 11.2,
+        "20250102": 10.8,
+        "20250103": 11.5
+      },
+      "PS": {
+        "20250101": 101.0,
+        "20250102": 100.8,
+        "20250103": 101.2
+      }
+    }
+  },
+  "header": {
+    "title": "SYNTHETIC NASA POWER JSON-SHAPE FIXTURE",
+    "api": {
+      "version": "FAKE-FIXTURE",
+      "name": "POWER Daily API (simulated)"
+    },
+    "sources": [
+      "SYNTHETIC"
+    ],
+    "fill_value": -999.0,
+    "start": "20250101",
+    "end": "20250103",
+    "time_standard": "LST"
+  },
+  "messages": [],
+  "parameters": {
+    "T2M": {
+      "units": "C",
+      "longname": "Temperature at 2 Meters"
+    },
+    "T2M_MAX": {
+      "units": "C",
+      "longname": "Temperature at 2 Meters Maximum"
+    },
+    "T2M_MIN": {
+      "units": "C",
+      "longname": "Temperature at 2 Meters Minimum"
+    },
+    "PRECTOTCORR": {
+      "units": "mm/day",
+      "longname": "Precipitation Corrected"
+    },
+    "RH2M": {
+      "units": "%",
+      "longname": "Relative Humidity at 2 Meters"
+    },
+    "WS2M": {
+      "units": "m/s",
+      "longname": "Wind Speed at 2 Meters"
+    },
+    "ALLSKY_SFC_SW_DWN": {
+      "units": "MJ/m^2/day",
+      "longname": "All Sky Surface Shortwave Downward Irradiance"
+    },
+    "PS": {
+      "units": "kPa",
+      "longname": "Surface Pressure"
+    }
+  }
+}

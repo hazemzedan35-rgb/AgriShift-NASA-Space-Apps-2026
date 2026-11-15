@@ -1,0 +1,272 @@
+{
+  "database_status": "Twelve FAO-56 Table 11/12 example crop water profiles (stage lengths and single crop Kc). Only 10 annual crops are candidate rotations; flooded rice and perennial multi-cut alfalfa are quantified as ETc only pending management data. No field-specific crop-suitability claim. Crop-family diversity uses botanical families (Poaceae, Fabaceae, etc.), not harvest-use categories.",
+  "references": {
+    "kc": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+    "rotation": "https://www.fao.org/conservation-agriculture/in-practice/species-diversification/en/",
+    "egypt_calendar": "https://barp.org.in/node/2978",
+    "growth_stages": "https://www.fao.org/4/x0490e/x0490e0b.htm",
+    "roots": "https://www.fao.org/4/x0490e/x0490e0e.htm",
+    "salinity": "https://www.fao.org/4/x0490e/x0490e0e.htm",
+    "ecocrop": "https://gaez.fao.org/pages/ecocrop-search",
+    "calendar": "https://cropcalendar.apps.fao.org/",
+    "paddy_limit": "https://www.fao.org/land-water/resources/tools/software/cropwat/en"
+  },
+  "crops": {
+    "wheat": {
+      "name": "Winter wheat (grain)",
+      "family": "poaceae",
+      "season": "winter",
+      "kc_initial": 0.7,
+      "kc_mid": 1.15,
+      "kc_end": 0.35,
+      "stages_days": [
+        15,
+        25,
+        50,
+        30
+      ],
+      "kc_basis": "FAO56 Table 12 winter wheat non-frozen soils, Kc end 0.35 within 0.25–0.4 range",
+      "duration_basis": "FAO56 Table 11 barley/oats/wheat 120 day example (Central India); NOT Egypt-specific",
+      "note": "Representative wheat proxy. Verify Egypt-specific growth period and cultivar before on-farm use. Sowing day remains original pilot convention, NOT an extension-service calendar.",
+      "rotation_eligible": true,
+      "model_scope": "Original FAO-56 representative example; not Egypt-calibrated",
+      "scientific_name": "Triticum aestivum"
+    },
+    "faba": {
+      "name": "Faba bean (fresh harvest)",
+      "family": "fabaceae",
+      "season": "winter",
+      "kc_initial": 0.5,
+      "kc_mid": 1.15,
+      "kc_end": 1.1,
+      "stages_days": [
+        20,
+        30,
+        35,
+        15
+      ],
+      "kc_basis": "FAO56 Table 12 faba bean FRESH (not dry seed)",
+      "duration_basis": "FAO56 Table 11 broad bean 100-day Mediterranean example (Mar/Apr); season timing must be locally confirmed",
+      "note": "Fresh broad beans, not seed/dry faba. Duration and planting month are illustrative for Nile Delta. Sowing day remains original pilot convention, NOT an extension-service calendar.",
+      "rotation_eligible": true,
+      "model_scope": "Original FAO-56 representative example; not Egypt-calibrated",
+      "scientific_name": "Vicia faba"
+    },
+    "maize": {
+      "name": "Field maize (grain)",
+      "family": "poaceae",
+      "season": "summer",
+      "kc_initial": 0.3,
+      "kc_mid": 1.2,
+      "kc_end": 0.35,
+      "stages_days": [
+        20,
+        35,
+        40,
+        30
+      ],
+      "kc_basis": "FAO56 Table 12 field maize Kc initial=0.3 (cereal baseline), mid=1.2, end=0.35 in 0.35–0.6 range",
+      "duration_basis": "FAO56 Table 11 grain maize 125-day example (Nigeria/India), not Egypt-specific",
+      "note": "Representative grain maize; verify Kc and duration for local cultivar and management. Sowing day remains original pilot convention, NOT an extension-service calendar.",
+      "rotation_eligible": true,
+      "model_scope": "Original FAO-56 representative example; not Egypt-calibrated",
+      "scientific_name": "Zea mays"
+    },
+    "sunflower": {
+      "name": "Sunflower (oilseed)",
+      "family": "asteraceae",
+      "season": "summer",
+      "kc_initial": 0.35,
+      "kc_mid": 1.1,
+      "kc_end": 0.35,
+      "stages_days": [
+        25,
+        35,
+        45,
+        25
+      ],
+      "kc_basis": "FAO56 Table 12 oil crops Kc ini=0.35, sunflower mid 1.0–1.15 (choose illustrative 1.10), end=0.35",
+      "duration_basis": "FAO56 Table 11 sunflower 130-day Mediterranean example, April/May",
+      "note": "Representative sunflower crop coefficients, not local recommendations. Sowing day remains original pilot convention, NOT an extension-service calendar.",
+      "rotation_eligible": true,
+      "model_scope": "Original FAO-56 representative example; not Egypt-calibrated",
+      "scientific_name": "Helianthus annuus"
+    },
+    "rice": {
+      "name": "Paddy rice (flooded)",
+      "family": "poaceae",
+      "season": "summer",
+      "kc_initial": 1.05,
+      "kc_mid": 1.2,
+      "kc_end": 0.9,
+      "stages_days": [
+        30,
+        30,
+        60,
+        30
+      ],
+      "kc_basis": "FAO-56 Table 12; Kc end 0.90 is upper end of published 0.60-0.90",
+      "duration_basis": "FAO-56 Table 11; Rice May; Mediterranean 150 days; planting day 15 selected for ILLUSTRATION, NOT from FAO",
+      "sowing_month": 5,
+      "sowing_day": 15,
+      "rotation_eligible": false,
+      "model_scope": "atmospheric crop ET only; additional paddy water components NOT quantified",
+      "note": "The planting day is an explicit planning convention, not a validated local crop calendar. Site suitability cannot be concluded from Kc.",
+      "scientific_name": "Oryza sativa"
+    },
+    "cotton": {
+      "name": "Cotton (fibre)",
+      "family": "malvaceae",
+      "season": "summer",
+      "kc_initial": 0.35,
+      "kc_mid": 1.15,
+      "kc_end": 0.5,
+      "stages_days": [
+        30,
+        50,
+        60,
+        55
+      ],
+      "kc_basis": "FAO-56 Table 12; Kc mid 1.15 and end 0.50 are published range endpoints",
+      "duration_basis": "FAO-56 Table 11; Cotton 195 days; Egypt/Pakistan/California March-May; planting day 15 selected for ILLUSTRATION, NOT from FAO",
+      "sowing_month": 4,
+      "sowing_day": 15,
+      "rotation_eligible": true,
+      "model_scope": "FAO-56 example, NOT locally calibrated",
+      "note": "The planting day is an explicit planning convention, not a validated local crop calendar. Site suitability cannot be concluded from Kc.",
+      "scientific_name": "Gossypium spp."
+    },
+    "potato": {
+      "name": "Potato (tuber)",
+      "family": "solanaceae",
+      "season": "winter",
+      "kc_initial": 0.5,
+      "kc_mid": 1.15,
+      "kc_end": 0.75,
+      "stages_days": [
+        25,
+        30,
+        45,
+        30
+      ],
+      "kc_basis": "FAO-56 Table 12; Kc initial 0.50 is FAO root/tuber group default",
+      "duration_basis": "FAO-56 Table 11; Potato 130 days; Jan/Nov semi-arid region; 45-day mid stage; planting day 15 selected for ILLUSTRATION, NOT from FAO",
+      "sowing_month": 11,
+      "sowing_day": 15,
+      "rotation_eligible": true,
+      "model_scope": "FAO-56 example, NOT locally calibrated",
+      "note": "The planting day is an explicit planning convention, not a validated local crop calendar. Site suitability cannot be concluded from Kc.",
+      "scientific_name": "Solanum tuberosum"
+    },
+    "tomato": {
+      "name": "Tomato (fresh field)",
+      "family": "solanaceae",
+      "season": "summer",
+      "kc_initial": 0.6,
+      "kc_mid": 1.15,
+      "kc_end": 0.7,
+      "stages_days": [
+        30,
+        40,
+        45,
+        30
+      ],
+      "kc_basis": "FAO-56 Table 12; Kc end 0.70 is published 0.70-0.90 lower endpoint",
+      "duration_basis": "FAO-56 Table 11; Tomato 145 days; April/May Mediterranean example; planting day 15 selected for ILLUSTRATION, NOT from FAO",
+      "sowing_month": 5,
+      "sowing_day": 15,
+      "rotation_eligible": true,
+      "model_scope": "FAO-56 example, NOT locally calibrated",
+      "note": "The planting day is an explicit planning convention, not a validated local crop calendar. Site suitability cannot be concluded from Kc.",
+      "scientific_name": "Solanum lycopersicum"
+    },
+    "onion": {
+      "name": "Onion (dry bulb)",
+      "family": "amaryllidaceae",
+      "season": "winter",
+      "kc_initial": 0.7,
+      "kc_mid": 1.05,
+      "kc_end": 0.75,
+      "stages_days": [
+        20,
+        35,
+        110,
+        45
+      ],
+      "kc_basis": "FAO-56 Table 12; Kc initial 0.70 from small-vegetable group default",
+      "duration_basis": "FAO-56 Table 11; Dry onion 210 days; October/January arid region example; planting day 15 selected for ILLUSTRATION, NOT from FAO",
+      "sowing_month": 10,
+      "sowing_day": 15,
+      "rotation_eligible": true,
+      "model_scope": "FAO-56 example, NOT locally calibrated",
+      "note": "The planting day is an explicit planning convention, not a validated local crop calendar. Site suitability cannot be concluded from Kc.",
+      "scientific_name": "Allium cepa"
+    },
+    "sugarbeet": {
+      "name": "Sugar beet (root)",
+      "family": "amaranthaceae",
+      "season": "winter",
+      "kc_initial": 0.35,
+      "kc_mid": 1.2,
+      "kc_end": 0.7,
+      "stages_days": [
+        35,
+        60,
+        70,
+        40
+      ],
+      "kc_basis": "FAO-56 Table 12; FAO Table 12 Sugar Beet direct row",
+      "duration_basis": "FAO-56 Table 11; Sugar beet 205 days; November arid region example; planting day 10 selected for ILLUSTRATION, NOT from FAO",
+      "sowing_month": 11,
+      "sowing_day": 10,
+      "rotation_eligible": true,
+      "model_scope": "FAO-56 example, NOT locally calibrated",
+      "note": "The planting day is an explicit planning convention, not a validated local crop calendar. Site suitability cannot be concluded from Kc.",
+      "scientific_name": "Beta vulgaris (sugar beet cultivar group)"
+    },
+    "alfalfa": {
+      "name": "Alfalfa hay (first cutting only)",
+      "family": "fabaceae",
+      "season": "winter",
+      "kc_initial": 0.4,
+      "kc_mid": 1.2,
+      "kc_end": 1.15,
+      "stages_days": [
+        10,
+        20,
+        20,
+        10
+      ],
+      "kc_basis": "FAO-56 Table 12; Individual cutting Kc Table 12; NOT a full multi-cut hay season",
+      "duration_basis": "FAO-56 Table 11; Alfalfa first cutting 60 days; FAO-56 Table 11 California example; planting day 15 selected for ILLUSTRATION, NOT from FAO",
+      "sowing_month": 1,
+      "sowing_day": 15,
+      "rotation_eligible": false,
+      "model_scope": "single first cutting only; NOT full season or rotation-ready",
+      "note": "The planting day is an explicit planning convention, not a validated local crop calendar. Site suitability cannot be concluded from Kc.",
+      "scientific_name": "Medicago sativa"
+    },
+    "sorghum": {
+      "name": "Grain sorghum",
+      "family": "poaceae",
+      "season": "summer",
+      "kc_initial": 0.3,
+      "kc_mid": 1.0,
+      "kc_end": 0.55,
+      "stages_days": [
+        20,
+        35,
+        40,
+        30
+      ],
+      "kc_basis": "FAO-56 Table 12; Kc mid 1.00 at lower end of published grain sorghum range 1.00–1.10",
+      "duration_basis": "FAO-56 Table 11; FAO-56 Table 11 sorghum May/June example: stage lengths sum to 125 although listed total is 130; the four published stage values are used; planting day 15 selected for ILLUSTRATION, NOT from FAO",
+      "sowing_month": 6,
+      "sowing_day": 15,
+      "rotation_eligible": true,
+      "model_scope": "FAO-56 example, NOT locally calibrated",
+      "note": "The planting day is an explicit planning convention, not a validated local crop calendar. Site suitability cannot be concluded from Kc.",
+      "scientific_name": "Sorghum bicolor"
+    }
+  }
+}

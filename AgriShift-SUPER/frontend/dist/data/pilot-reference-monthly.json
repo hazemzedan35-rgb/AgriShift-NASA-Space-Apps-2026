@@ -1,0 +1,65 @@
+{
+  "year": 2025,
+  "months": [
+    {
+      "month": "2025-01",
+      "eto_total_mm": 69.725,
+      "daily_mean_mm": 2.249
+    },
+    {
+      "month": "2025-02",
+      "eto_total_mm": 81.583,
+      "daily_mean_mm": 2.914
+    },
+    {
+      "month": "2025-03",
+      "eto_total_mm": 144.681,
+      "daily_mean_mm": 4.667
+    },
+    {
+      "month": "2025-04",
+      "eto_total_mm": 178.508,
+      "daily_mean_mm": 5.95
+    },
+    {
+      "month": "2025-05",
+      "eto_total_mm": 246.003,
+      "daily_mean_mm": 7.936
+    },
+    {
+      "month": "2025-06",
+      "eto_total_mm": 253.564,
+      "daily_mean_mm": 8.452
+    },
+    {
+      "month": "2025-07",
+      "eto_total_mm": 264.659,
+      "daily_mean_mm": 8.537
+    },
+    {
+      "month": "2025-08",
+      "eto_total_mm": 244.398,
+      "daily_mean_mm": 7.884
+    },
+    {
+      "month": "2025-09",
+      "eto_total_mm": 189.035,
+      "daily_mean_mm": 6.301
+    },
+    {
+      "month": "2025-10",
+      "eto_total_mm": 147.436,
+      "daily_mean_mm": 4.756
+    },
+    {
+      "month": "2025-11",
+      "eto_total_mm": 97.784,
+      "daily_mean_mm": 3.259
+    },
+    {
+      "month": "2025-12",
+      "eto_total_mm": 78.336,
+      "daily_mean_mm": 2.527
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+-r requirements.txt
+# TestClient needs an HTTP client library. Older Starlette uses httpx; Starlette 1.x asks for httpx2.
+httpx>=0.27
+httpx2
