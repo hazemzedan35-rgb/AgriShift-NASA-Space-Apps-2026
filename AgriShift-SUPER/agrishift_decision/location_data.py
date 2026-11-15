@@ -30,7 +30,12 @@ POWER_URL = 'https://power.larc.nasa.gov/api/temporal/daily/point'
 PARAMETERS = ('T2M', 'T2M_MAX', 'T2M_MIN', 'PRECTOTCORR', 'RH2M', 'WS2M', 'ALLSKY_SFC_SW_DWN', 'PS')
 EXPECTED_UNITS = {'T2M': 'C', 'T2M_MAX':'C', 'T2M_MIN':'C', 'PRECTOTCORR':'mm/day',
                   'RH2M':'%', 'WS2M':'m/s', 'ALLSKY_SFC_SW_DWN':'MJ/m^2/day', 'PS':'kPa'}
-CACHE_ROOT = ROOT/'outputs'/'location_cache'
+
+CACHE_ROOT = (
+    Path("/tmp/agrishift/location_cache")
+    if os.getenv("VERCEL")
+    else ROOT / "outputs" / "location_cache"
+)
 
 # Network behaviour: a few polite retries for temporary problems only.
 FETCH_ATTEMPTS = 3
